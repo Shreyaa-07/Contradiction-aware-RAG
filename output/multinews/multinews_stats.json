@@ -1,0 +1,16 @@
+{
+  "dataset": "Multi-News",
+  "sample_size": 2000,
+  "total_train_size": 44972,
+  "total_articles_extracted": 5748,
+  "clusters_in_sample": 1999,
+  "articles_per_cluster_mean": 2.88,
+  "articles_per_cluster_median": 2.0,
+  "article_word_count_mean": 643.0,
+  "article_word_count_median": 464.5,
+  "exact_duplicates_found": 342,
+  "missing_values": 0,
+  "has_source_metadata": false,
+  "has_date_metadata": false,
+  "has_contradiction_labels": false
+}

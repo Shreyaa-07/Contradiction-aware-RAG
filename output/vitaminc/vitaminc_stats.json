@@ -1,0 +1,19 @@
+{
+  "dataset": "VitaminC",
+  "sample_size": 5000,
+  "total_train_size": 370653,
+  "cleaned_records": 5000,
+  "label_distribution": {
+    "SUPPORTS": 2475,
+    "REFUTES": 1769,
+    "NOT_ENOUGH_INFO": 756
+  },
+  "unique_case_ids": 4916,
+  "unique_pages": 3536,
+  "claim_word_count_mean": 12.7,
+  "evidence_word_count_mean": 29.7,
+  "has_contradiction_labels": true,
+  "has_source_metadata": true,
+  "has_date_metadata": true,
+  "license": "CC BY-SA 3.0"
+}

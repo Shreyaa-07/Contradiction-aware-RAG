@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caching & environments
+.cache/
+.env
+venv/
+.venv/
+env/
+
+# Large generated data files (exceeds GitHub file size limit; generated locally via scripts)
+*.csv
+*.jsonl
+output/**/*.csv
+output/**/*.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db

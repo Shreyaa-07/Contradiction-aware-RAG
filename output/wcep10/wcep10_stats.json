@@ -1,0 +1,14 @@
+{
+  "dataset": "WCEP-10",
+  "total_clusters": 8158,
+  "total_articles_extracted": 73231,
+  "clusters_in_cleaned": 8158,
+  "articles_per_cluster_mean": 8.98,
+  "articles_per_cluster_median": 10.0,
+  "article_word_count_mean": 421.0,
+  "article_word_count_median": 338.0,
+  "exact_duplicates_found": 1950,
+  "has_source_metadata": false,
+  "has_date_metadata": false,
+  "has_contradiction_labels": false
+}
