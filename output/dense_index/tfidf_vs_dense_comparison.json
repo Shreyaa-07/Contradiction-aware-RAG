@@ -1,0 +1,82 @@
+[
+  {
+    "query":"hurricane death toll Florida",
+    "overlap":1,
+    "dense_clusters":4,
+    "tfidf_clusters":5,
+    "dense_avg_score":0.4479,
+    "tfidf_avg_score":0.1268
+  },
+  {
+    "query":"election results controversy vote count",
+    "overlap":1,
+    "dense_clusters":5,
+    "tfidf_clusters":4,
+    "dense_avg_score":0.3996,
+    "tfidf_avg_score":0.1338
+  },
+  {
+    "query":"climate change global warming temperature",
+    "overlap":3,
+    "dense_clusters":3,
+    "tfidf_clusters":3,
+    "dense_avg_score":0.509,
+    "tfidf_avg_score":0.2448
+  },
+  {
+    "query":"police shooting unarmed victim",
+    "overlap":2,
+    "dense_clusters":5,
+    "tfidf_clusters":3,
+    "dense_avg_score":0.5531,
+    "tfidf_avg_score":0.1489
+  },
+  {
+    "query":"earthquake casualties damage estimate",
+    "overlap":1,
+    "dense_clusters":4,
+    "tfidf_clusters":4,
+    "dense_avg_score":0.4688,
+    "tfidf_avg_score":0.1559
+  },
+  {
+    "query":"trade war tariffs China United States",
+    "overlap":3,
+    "dense_clusters":3,
+    "tfidf_clusters":3,
+    "dense_avg_score":0.5741,
+    "tfidf_avg_score":0.2372
+  },
+  {
+    "query":"COVID vaccine side effects safety",
+    "overlap":2,
+    "dense_clusters":5,
+    "tfidf_clusters":5,
+    "dense_avg_score":0.3844,
+    "tfidf_avg_score":0.1249
+  },
+  {
+    "query":"oil prices stock market crash",
+    "overlap":2,
+    "dense_clusters":4,
+    "tfidf_clusters":4,
+    "dense_avg_score":0.4901,
+    "tfidf_avg_score":0.1901
+  },
+  {
+    "query":"school shooting gun control",
+    "overlap":2,
+    "dense_clusters":5,
+    "tfidf_clusters":3,
+    "dense_avg_score":0.5385,
+    "tfidf_avg_score":0.2544
+  },
+  {
+    "query":"immigration border policy refugees",
+    "overlap":3,
+    "dense_clusters":3,
+    "tfidf_clusters":3,
+    "dense_avg_score":0.4881,
+    "tfidf_avg_score":0.151
+  }
+]

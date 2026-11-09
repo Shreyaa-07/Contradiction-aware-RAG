@@ -1,0 +1,8 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "num_documents": 5748,
+  "index_type": "FlatIP (exact cosine search)",
+  "batch_size": 64,
+  "embeddings_cached": "C:\\College\\ire project\\output\\dense_index\\corpus_embeddings.npy"
+}

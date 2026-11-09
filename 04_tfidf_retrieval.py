@@ -34,9 +34,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 warnings.filterwarnings("ignore")
 
-# ---------------------------------------------------------------------------
-# Paths
-# ---------------------------------------------------------------------------
 BASE_DIR   = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output" / "multinews"
 INDEX_DIR  = BASE_DIR / "output" / "tfidf_index"
@@ -44,9 +41,6 @@ INDEX_DIR.mkdir(parents=True, exist_ok=True)
 
 CLEANED_CSV = OUTPUT_DIR / "multinews_cleaned_sample.csv"
 
-# ---------------------------------------------------------------------------
-# Compatibility shims (same as EDA scripts)
-# ---------------------------------------------------------------------------
 try:
     import huggingface_hub.utils._hf_uris as _hf_uris
     _orig_parse = _hf_uris._parse_repo_body
@@ -72,9 +66,7 @@ except Exception:
     pass
 
 
-# ---------------------------------------------------------------------------
-# Data Loading
-# ---------------------------------------------------------------------------
+
 def _clean_article(text: str) -> str:
     """Minimal text cleaning matching 01_multinews_eda.py."""
     text = text.strip()
@@ -95,16 +87,9 @@ def load_corpus(sample_size: int = 2000) -> pd.DataFrame:
     Returns a DataFrame with columns: doc_id, cluster_id, text, summary.
     """
     if CLEANED_CSV.exists():
-        print(f"[INFO] Loading pre-cleaned corpus from: {CLEANED_CSV}")
         df = pd.read_csv(CLEANED_CSV)
-        print(f"[INFO] Loaded {len(df):,} articles.")
         return df
 
-    print("[INFO] Pre-cleaned CSV not found -- downloading raw files from HuggingFace Hub...")
-    # multi_news has no Parquet; the repo stores raw text files:
-    #   data/train.src.cleaned  -- one cluster of articles per line (sep: |||||)
-    #   data/train.tgt          -- one summary per line
-    # We download them directly via huggingface_hub (no loading-script needed).
     from huggingface_hub import hf_hub_download
 
     src_path = hf_hub_download(
@@ -117,7 +102,6 @@ def load_corpus(sample_size: int = 2000) -> pd.DataFrame:
         filename  = "data/train.tgt",
         repo_type = "dataset",
     )
-    print(f"[INFO] Downloaded raw files to cache.")
 
     with open(src_path, "r", encoding="utf-8", errors="replace") as f:
         src_lines = f.readlines()
@@ -128,7 +112,6 @@ def load_corpus(sample_size: int = 2000) -> pd.DataFrame:
     n = min(sample_size, len(src_lines))
     src_lines = src_lines[:n]
     tgt_lines = tgt_lines[:n]
-    print(f"[INFO] Using {n:,} clusters from {len(src_lines):,} total train rows.")
 
     rows = []
     for idx, (src_line, tgt_line) in enumerate(zip(src_lines, tgt_lines)):
@@ -151,13 +134,9 @@ def load_corpus(sample_size: int = 2000) -> pd.DataFrame:
             })
 
     df = pd.DataFrame(rows)
-    print(f"[INFO] Built corpus with {len(df):,} articles from {n:,} clusters.")
     return df
 
 
-# ---------------------------------------------------------------------------
-# TF-IDF Index
-# ---------------------------------------------------------------------------
 class TFIDFRetriever:
     """
     Builds and queries a TF-IDF index over a document corpus.
@@ -194,13 +173,7 @@ class TFIDFRetriever:
     def build(self, corpus_df: pd.DataFrame) -> None:
         """Fit the vectorizer and build the document-term matrix."""
         self.corpus_df = corpus_df.reset_index(drop=True)
-        print(f"[INFO] Fitting TF-IDF on {len(corpus_df):,} documents ...")
         self.tfidf_matrix = self.vectorizer.fit_transform(corpus_df["text"])
-        vocab_size = len(self.vectorizer.vocabulary_)
-        print(
-            f"[INFO] Matrix shape: {self.tfidf_matrix.shape} | "
-            f"Vocab: {vocab_size:,} terms"
-        )
 
     def retrieve(self, query: str, top_k: int = 5) -> pd.DataFrame:
         """
@@ -244,36 +217,23 @@ class TFIDFRetriever:
         }
         with open(out_path, "w", encoding="utf-8") as fh:
             json.dump(stats, fh, indent=2)
-        print(f"[INFO] Index stats saved to: {out_path}")
 
 
-# ---------------------------------------------------------------------------
-# Display / Persistence Helpers
-# ---------------------------------------------------------------------------
 def _print_results(query: str, results_df: pd.DataFrame) -> None:
-    sep = "-" * 72
-    print(f"\n{'=' * 72}")
-    print(f"  QUERY  : {query}")
-    print(f"  TOP-{len(results_df)} RESULTS  (TF-IDF cosine similarity)")
-    print(f"{'=' * 72}")
+    print(f"\nQUERY: {query}")
+    print(f"TOP-{len(results_df)} RESULTS (TF-IDF cosine similarity)\n")
 
     for _, row in results_df.iterrows():
-        print(f"\n  Rank #{row['rank']}  |  Score: {row['score']:.6f}")
+        print(f"  Rank #{row['rank']}  |  Score: {row['score']:.6f}")
         print(f"  Doc ID     : {row['doc_id']}")
         print(f"  Cluster    : {row['cluster_id']}")
         print(f"  Words      : {row['word_count']:,}")
-        print(sep)
-        print(f"  Snippet:")
-        # Wrap snippet at 68 chars for readability
         snippet = row["snippet"]
-        for i in range(0, min(len(snippet), 280), 68):
-            print(f"    {snippet[i:i+68]}")
+        print(f"  Snippet    : {snippet[:200]}")
         if row["summary"]:
             summary_short = row["summary"][:200].replace("\n", " ")
-            print(f"  Summary    : {summary_short} ...")
+            print(f"  Summary    : {summary_short}")
         print()
-
-    print(f"{'=' * 72}\n")
 
 
 def _save_results(query: str, results_df: pd.DataFrame) -> None:
@@ -287,32 +247,21 @@ def _save_results(query: str, results_df: pd.DataFrame) -> None:
             record["query"] = query
             fh.write(json.dumps(record, ensure_ascii=False) + "\n")
 
-    print(f"[INFO] Results saved to: {out_path}")
 
 
-# ---------------------------------------------------------------------------
-# Interactive Loop
-# ---------------------------------------------------------------------------
 def interactive_loop(retriever: TFIDFRetriever) -> None:
-    print("\n[INTERACTIVE MODE]")
-    print("  Type a query and press Enter to retrieve documents.")
-    print("  Append  --top_k <n>  to change result count (default: 5).")
-    print("  Type 'exit' or 'quit' to stop.\n")
 
     while True:
         try:
             raw = input("Query> ").strip()
         except (EOFError, KeyboardInterrupt):
-            print("\n[INFO] Exiting.")
             break
 
         if not raw:
             continue
         if raw.lower() in {"exit", "quit", "q"}:
-            print("[INFO] Goodbye.")
             break
 
-        # Allow inline --top_k override
         top_k = 5
         if "--top_k" in raw:
             parts = raw.split("--top_k")
@@ -325,16 +274,12 @@ def interactive_loop(retriever: TFIDFRetriever) -> None:
         results = retriever.retrieve(raw, top_k=top_k)
 
         if results.empty or results["score"].max() == 0:
-            print("[WARN] No relevant documents found. Try different keywords.\n")
             continue
 
         _print_results(raw, results)
         _save_results(raw, results)
 
 
-# ---------------------------------------------------------------------------
-# Entry Point
-# ---------------------------------------------------------------------------
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="TF-IDF document retrieval over the Multi-News corpus."
@@ -365,15 +310,12 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    # 1. Load corpus
     corpus_df = load_corpus(sample_size=args.sample_size)
 
-    # 2. Build index
     retriever = TFIDFRetriever(max_features=args.max_features)
     retriever.build(corpus_df)
     retriever.save_index_stats(INDEX_DIR / "tfidf_index_stats.json")
 
-    # 3. Retrieve
     if args.query:
         results = retriever.retrieve(args.query, top_k=args.top_k)
         _print_results(args.query, results)

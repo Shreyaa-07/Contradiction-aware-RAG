@@ -13,8 +13,12 @@ env/
 # Large generated data files (exceeds GitHub file size limit; generated locally via scripts)
 *.csv
 *.jsonl
+*.npy
+*.bin
 output/**/*.csv
 output/**/*.jsonl
+output/**/*.npy
+output/**/*.bin
 
 # OS files
 .DS_Store

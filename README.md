@@ -1,6 +1,6 @@
 # Contradiction-Aware RAG
 
-An exploratory data analysis (EDA), preprocessing, and dataset feasibility pipeline for building a **Contradiction-Aware Retrieval-Augmented Generation (RAG)** system.
+An EDA, preprocessing, retrieval, and dataset feasibility pipeline for building a **Contradiction-Aware Retrieval-Augmented Generation (RAG)** system.
 
 ---
 
@@ -9,6 +9,7 @@ An exploratory data analysis (EDA), preprocessing, and dataset feasibility pipel
 When standard RAG systems retrieve multiple documents across different news sources covering the same event, they often encounter conflicting or contradictory information (e.g., conflicting casualty counts, dates, or factual claims). This project explores multi-document corpora and fact-verification datasets to evaluate:
 1. Suitable multi-document retrieval corpora (Multi-News, WCEP-10).
 2. Labeled training/evaluation datasets for contradiction detection (VitaminC).
+3. Sparse vs Dense retrieval for finding relevant multi-source documents.
 
 ---
 
@@ -43,15 +44,20 @@ When standard RAG systems retrieve multiple documents across different news sour
 ├── 01_multinews_eda.py      # Multi-News EDA, preprocessing, and export
 ├── 02_wcep10_eda.py         # WCEP-10 EDA, preprocessing, and export
 ├── 03_vitaminc_eda.py       # VitaminC EDA, preprocessing, and export
+├── 04_tfidf_retrieval.py    # TF-IDF sparse retrieval baseline
+├── 05_dense_retrieval.py    # Dense retrieval (Sentence-BERT + FAISS) with TF-IDF comparison
 ├── output/
 │   ├── multinews/           # Visualizations (.png) and stats summary (.json)
 │   ├── wcep10/              # Visualizations (.png) and stats summary (.json)
-│   └── vitaminc/            # Visualizations (.png) and stats summary (.json)
+│   ├── vitaminc/            # Visualizations (.png) and stats summary (.json)
+│   ├── tfidf_index/         # TF-IDF index stats and query results
+│   └── dense_index/         # FAISS index, cached embeddings, and comparison results
 ├── .gitignore
+├── PROJECT_DOCUMENTATION.md # Comprehensive technical documentation
 └── README.md
 ```
 
-> **Note**: Cleaned `.csv` and `.jsonl` files are generated locally in `output/` when the scripts are executed.
+> **Note**: Cleaned `.csv`, `.jsonl`, `.npy`, and `.bin` files are generated locally in `output/` when the scripts are executed.
 
 ---
 
@@ -65,7 +71,7 @@ When standard RAG systems retrieve multiple documents across different news sour
 
 2. **Install dependencies:**
    ```bash
-   pip install datasets pandas numpy matplotlib
+   pip install datasets pandas numpy matplotlib scikit-learn sentence-transformers faiss-cpu
    ```
 
 3. **Run the EDA scripts:**
@@ -73,4 +79,16 @@ When standard RAG systems retrieve multiple documents across different news sour
    python 01_multinews_eda.py
    python 02_wcep10_eda.py
    python 03_vitaminc_eda.py
+   ```
+
+4. **Run the retrieval scripts:**
+   ```bash
+   # TF-IDF sparse retrieval
+   python 04_tfidf_retrieval.py --query "hurricane death toll Florida"
+
+   # Dense retrieval (Sentence-BERT + FAISS)
+   python 05_dense_retrieval.py --query "hurricane death toll Florida"
+
+   # Compare both retrieval methods side-by-side
+   python 05_dense_retrieval.py --compare
    ```
