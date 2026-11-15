@@ -1,0 +1,583 @@
+{
+  "query": "employee annual leave policy entitlement",
+  "elapsed_seconds": 0.01,
+  "documents": [
+    {
+      "rank": 1,
+      "doc_id": "hr_policy_v1",
+      "cluster_id": "leave_policy",
+      "source": "Corporate Standard HR Policy Manual (v1.0)",
+      "text": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+      "snippet": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+      "score": 0.83
+    },
+    {
+      "rank": 2,
+      "doc_id": "hr_handbook_v2",
+      "cluster_id": "leave_policy",
+      "source": "Updated Employee Handbook (v2.0 - 2026)",
+      "text": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+      "snippet": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+      "score": 0.78
+    },
+    {
+      "rank": 3,
+      "doc_id": "probation_clause_03",
+      "cluster_id": "leave_policy",
+      "source": "Onboarding & Probationary Policy Addendum",
+      "text": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment.",
+      "snippet": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment.",
+      "score": 0.73
+    }
+  ],
+  "extracted_claims": [
+    {
+      "claim_id": "hr_policy_v1_C1",
+      "doc_id": "hr_policy_v1",
+      "cluster_id": "leave_policy",
+      "text": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+      "subject": "time permanent employees are",
+      "predicate": "annual_leave_every_year_under_standard_company_policy",
+      "value": "24",
+      "unit": "days",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Corporate Standard HR Policy Manual (v1.0)"
+      }
+    },
+    {
+      "claim_id": "hr_policy_v1_C2",
+      "doc_id": "hr_policy_v1",
+      "cluster_id": "leave_policy",
+      "text": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+      "subject": "nent employees are entitled to",
+      "predicate": "has_value",
+      "value": "24",
+      "unit": "days",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Corporate Standard HR Policy Manual (v1.0)"
+      }
+    },
+    {
+      "claim_id": "hr_handbook_v2_C1",
+      "doc_id": "hr_handbook_v2",
+      "cluster_id": "leave_policy",
+      "text": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+      "subject": "time staff members",
+      "predicate": "paid_annual_leave_per_company_handbook_v",
+      "value": "30",
+      "unit": "days",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Updated Employee Handbook (v2.0 - 2026)"
+      }
+    },
+    {
+      "claim_id": "hr_handbook_v2_C2",
+      "doc_id": "hr_handbook_v2",
+      "cluster_id": "leave_policy",
+      "text": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+      "subject": "time staff members receive",
+      "predicate": "has_value",
+      "value": "30",
+      "unit": "days",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Updated Employee Handbook (v2.0 - 2026)"
+      }
+    },
+    {
+      "claim_id": "probation_clause_03_C1",
+      "doc_id": "probation_clause_03",
+      "cluster_id": "leave_policy",
+      "text": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment.",
+      "subject": "employees joining after july",
+      "predicate": "annual_leave_during_their_first_year_of_employment",
+      "value": "12",
+      "unit": "days",
+      "conditions": [
+        "joining after July are entitled to 12 days of annual leave during their first year of employment"
+      ],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Onboarding & Probationary Policy Addendum"
+      }
+    },
+    {
+      "claim_id": "probation_clause_03_C2",
+      "doc_id": "probation_clause_03",
+      "cluster_id": "leave_policy",
+      "text": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment.",
+      "subject": "ing after july are entitled to",
+      "predicate": "has_value",
+      "value": "12",
+      "unit": "days",
+      "conditions": [
+        "joining after July are entitled to 12 days of annual leave during their first year of employment"
+      ],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Onboarding & Probationary Policy Addendum"
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "informational",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+        "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+      },
+      "confidence": 0.876,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "hr_policy_v1_C1",
+      "hypothesis_id": "hr_handbook_v2_C1"
+    },
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "informational",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+        "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+      },
+      "confidence": 0.876,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "hr_policy_v1_C1",
+      "hypothesis_id": "hr_handbook_v2_C2"
+    },
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "informational",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+        "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+      },
+      "confidence": 0.876,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "hr_policy_v1_C2",
+      "hypothesis_id": "hr_handbook_v2_C1"
+    },
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "informational",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+        "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+      },
+      "confidence": 0.876,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "hr_policy_v1_C2",
+      "hypothesis_id": "hr_handbook_v2_C2"
+    }
+  ],
+  "resolutions": [
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.876,
+      "authority_assessment": "Authority: [hr_policy_v1_C1]=news_outlet (weight 2) vs [hr_handbook_v2_C1]=news_outlet (weight 2)",
+      "recency_assessment": "Recency: [hr_policy_v1_C1]=standard vs [hr_handbook_v2_C1]=standard",
+      "version_assessment": "Version: [hr_policy_v1_C1]=unspecified vs [hr_handbook_v2_C1]=unspecified",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding time permanent employees are: Source A (hr_policy_v1) reports: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.', while Source B (hr_handbook_v2) reports: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "informational",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+        },
+        "confidence": 0.876,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C1",
+        "hypothesis_id": "hr_handbook_v2_C1"
+      }
+    },
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.876,
+      "authority_assessment": "Authority: [hr_policy_v1_C1]=news_outlet (weight 2) vs [hr_handbook_v2_C2]=news_outlet (weight 2)",
+      "recency_assessment": "Recency: [hr_policy_v1_C1]=standard vs [hr_handbook_v2_C2]=standard",
+      "version_assessment": "Version: [hr_policy_v1_C1]=unspecified vs [hr_handbook_v2_C2]=unspecified",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding time permanent employees are: Source A (hr_policy_v1) reports: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.', while Source B (hr_handbook_v2) reports: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "informational",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+        },
+        "confidence": 0.876,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C1",
+        "hypothesis_id": "hr_handbook_v2_C2"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C1",
+        "hypothesis_id": "probation_clause_03_C1"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C1",
+        "hypothesis_id": "probation_clause_03_C2"
+      }
+    },
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.876,
+      "authority_assessment": "Authority: [hr_policy_v1_C2]=news_outlet (weight 2) vs [hr_handbook_v2_C1]=news_outlet (weight 2)",
+      "recency_assessment": "Recency: [hr_policy_v1_C2]=standard vs [hr_handbook_v2_C1]=standard",
+      "version_assessment": "Version: [hr_policy_v1_C2]=unspecified vs [hr_handbook_v2_C1]=unspecified",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding nent employees are entitled to: Source A (hr_policy_v1) reports: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.', while Source B (hr_handbook_v2) reports: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "informational",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+        },
+        "confidence": 0.876,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C2",
+        "hypothesis_id": "hr_handbook_v2_C1"
+      }
+    },
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.876,
+      "authority_assessment": "Authority: [hr_policy_v1_C2]=news_outlet (weight 2) vs [hr_handbook_v2_C2]=news_outlet (weight 2)",
+      "recency_assessment": "Recency: [hr_policy_v1_C2]=standard vs [hr_handbook_v2_C2]=standard",
+      "version_assessment": "Version: [hr_policy_v1_C2]=unspecified vs [hr_handbook_v2_C2]=unspecified",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding nent employees are entitled to: Source A (hr_policy_v1) reports: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.', while Source B (hr_handbook_v2) reports: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "informational",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management."
+        },
+        "confidence": 0.876,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C2",
+        "hypothesis_id": "hr_handbook_v2_C2"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C2",
+        "hypothesis_id": "probation_clause_03_C1"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_policy_v1_C2",
+        "hypothesis_id": "probation_clause_03_C2"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_handbook_v2_C1",
+        "hypothesis_id": "probation_clause_03_C1"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_handbook_v2_C1",
+        "hypothesis_id": "probation_clause_03_C2"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_handbook_v2_C2",
+        "hypothesis_id": "probation_clause_03_C1"
+      }
+    },
+    {
+      "is_contradiction": false,
+      "precedence": "COMPATIBLE_CONTEXTUAL_VARIATION",
+      "winning_claim_id": null,
+      "confidence": 0.91,
+      "authority_assessment": "Both sources valid within their respective condition or geographic scope.",
+      "recency_assessment": "No temporal conflict.",
+      "version_assessment": "Non-conflicting versions.",
+      "requires_human_review": false,
+      "actionable_recommendation": "Surface both claims with their specific qualifiers (e.g. conditional rules or geographic regions).",
+      "synthesized_statement": "Both statements are valid in context: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.' applies generally, while 'Employees joining after July are entitled to 12 days of annual leave during their first year of employment.' applies conditionally or to a distinct scope.",
+      "verification_details": {
+        "is_contradiction": false,
+        "contradiction_type": "scope_or_conditional_difference",
+        "severity": "informational",
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction.",
+        "supporting_evidence": {
+          "premise_quote": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+          "hypothesis_quote": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment."
+        },
+        "confidence": 0.91,
+        "unresolved_questions": [
+          "Does the conditional clause completely supersede or operate as an exception to the base policy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "hr_handbook_v2_C2",
+        "hypothesis_id": "probation_clause_03_C2"
+      }
+    }
+  ],
+  "synthesized_answer": "Regarding your query: 'employee annual leave policy entitlement', multiple retrieved sources report CONFLICTING or DIVERGENT factual information.\n\n### Identified Contradictions & Discrepancies:\n\n1. **Numerical Discrepancy (INFORMATIONAL Severity)**:\n   - **Source A** ([hr_policy_v1] - Corporate Standard HR Policy Manual (v1.0)):\n     \"Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.\"\n   - **Source B** ([hr_handbook_v2] - Updated Employee Handbook (v2.0 - 2026)):\n     \"Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes.\n\n2. **Numerical Discrepancy (INFORMATIONAL Severity)**:\n   - **Source A** ([hr_policy_v1] - Corporate Standard HR Policy Manual (v1.0)):\n     \"Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.\"\n   - **Source B** ([hr_handbook_v2] - Updated Employee Handbook (v2.0 - 2026)):\n     \"Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes.\n\n3. **Numerical Discrepancy (INFORMATIONAL Severity)**:\n   - **Source A** ([hr_policy_v1] - Corporate Standard HR Policy Manual (v1.0)):\n     \"Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.\"\n   - **Source B** ([hr_handbook_v2] - Updated Employee Handbook (v2.0 - 2026)):\n     \"Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes.\n\n4. **Numerical Discrepancy (INFORMATIONAL Severity)**:\n   - **Source A** ([hr_policy_v1] - Corporate Standard HR Policy Manual (v1.0)):\n     \"Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.\"\n   - **Source B** ([hr_handbook_v2] - Updated Employee Handbook (v2.0 - 2026)):\n     \"Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes.\n\n### Conflict Resolution & Source Reliability Assessment:\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [hr_policy_v1_C1]=news_outlet (weight 2) vs [hr_handbook_v2_C1]=news_outlet (weight 2) | Version: [hr_policy_v1_C1]=unspecified vs [hr_handbook_v2_C1]=unspecified\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [hr_policy_v1_C1]=news_outlet (weight 2) vs [hr_handbook_v2_C2]=news_outlet (weight 2) | Version: [hr_policy_v1_C1]=unspecified vs [hr_handbook_v2_C2]=unspecified\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [hr_policy_v1_C2]=news_outlet (weight 2) vs [hr_handbook_v2_C1]=news_outlet (weight 2) | Version: [hr_policy_v1_C2]=unspecified vs [hr_handbook_v2_C1]=unspecified\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [hr_policy_v1_C2]=news_outlet (weight 2) vs [hr_handbook_v2_C2]=news_outlet (weight 2) | Version: [hr_policy_v1_C2]=unspecified vs [hr_handbook_v2_C2]=unspecified\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n\n### Balanced Takeaway:\n   Factual dispute detected regarding time permanent employees are: Source A (hr_policy_v1) reports: 'Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.', while Source B (hr_handbook_v2) reports: 'Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+  "mermaid_graph": "graph TD\n    fema_official_01_C1[\"death toll = 64\"] -- CONTRADICTS --> harvard_study_02_C1[\"hurricane maria in puerto rico, citing widespread post = 4,645\"]\n    fema_official_01_C1[\"death toll = 64\"] -- SUPERSEDES --> harvard_study_02_C1[\"hurricane maria in puerto rico, citing widespread post = 4,645\"]\n    fema_official_01_C1[\"death toll = 64\"] -- CONTRADICTS --> gw_university_03_C1[\"the official commissioned review = 2,975\"]\n    hr_policy_v1_C1[\"time permanent employees are = 24\"] -- CONTRADICTS --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    hr_policy_v1_C1[\"time permanent employees are = 24\"] -- CONTRADICTS --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C1[\"time permanent employees are = 24\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C1[\"time permanent employees are = 24\"]\n    hr_policy_v1_C2[\"nent employees are entitled to = 24\"] -- CONTRADICTS --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    hr_policy_v1_C2[\"nent employees are entitled to = 24\"] -- CONTRADICTS --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C2[\"nent employees are entitled to = 24\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C2[\"nent employees are entitled to = 24\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C2[\"time staff members receive = 30\"]"
+}

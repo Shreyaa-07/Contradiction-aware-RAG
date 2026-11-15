@@ -403,16 +403,28 @@ This comparison validates that dense vector similarity successfully uncovers sem
   └── Head-to-head comparison against TF-IDF baseline (--compare flag)
            │
            ▼
-  PHASE 3: Contradiction Detection       [ NEXT STEP ⏳ ]
-  ├── Cross-encoder NLI model (RoBERTa / DeBERTa-v3)
-  ├── Calibrate thresholds on VitaminC test split
-  └── Pairwise retrieved passage contradiction scoring
+  PHASE 3: Contradiction Detection       [ COMPLETED ✅ ]
+  ├── 06_claim_extraction.py            ➔ Structured atomic claims (subject, pred, value, cond, temporal)
+  ├── 07_nli_classifier.py              ➔ 3-way NLI classification (Contradiction, Entailment, Neutral)
+  ├── CandidatePairMatcher              ➔ O(n^2) pruning via topic/entity affinity grouping
+  └── Factual / DeBERTa Cross-Encoder   ➔ High-precision numerical & semantic divergence detection
            │
            ▼
-  PHASE 4: Contradiction-Aware RAG       [ FINAL STAGE ⏳ ]
-  ├── Conflict-structured prompt engineering
-  ├── Source-attributed synthesis
-  └── Evaluation (Faithfulness, Contradiction Recall, ROUGE)
+  PHASE 4: Contextual Reasoner & Resolv [ COMPLETED ✅ ]
+  ├── contextual_verification.py        ➔ Distinguishes real conflicts from conditional exceptions & scope
+  ├── conflict_resolution.py            ➔ Authority weighting, recency, and version precedence
+  └── Severity Scoring                  ➔ Critical, Moderate, Informational classifications
+           │
+           ▼
+  PHASE 5: Contradiction Knowledge Graph[ COMPLETED ✅ ]
+  ├── contradiction_graph.py            ➔ Claims as nodes, typed relationship edges
+  ├── Persistent Storage                ➔ output/contradiction_graph/knowledge_graph.json
+  └── Diagram Exporter                  ➔ ASCII terminal diagrams + Mermaid export
+           │
+           ▼
+  PHASE 6: Unified Pipeline & Evaluation[ COMPLETED ✅ ]
+  ├── run_contradiction_pipeline.py     ➔ Master CLI, Interactive REPL & Demo modes
+  └── evaluation_benchmark.py           ➔ 3-way benchmark (NLI Alone vs Reasoner vs Hybrid)
 ```
 
 ---

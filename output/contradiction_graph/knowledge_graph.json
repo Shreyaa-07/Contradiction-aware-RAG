@@ -1,0 +1,3678 @@
+{
+  "nodes": {
+    "fema_official_01": {
+      "id": "fema_official_01",
+      "node_type": "document",
+      "label": "Doc: fema_official_01",
+      "properties": {
+        "doc_id": "fema_official_01",
+        "title": "Federal Emergency Management Agency (FEMA) Official Report",
+        "cluster_id": "hurricane_maria"
+      }
+    },
+    "fema_official_01_C1": {
+      "id": "fema_official_01_C1",
+      "node_type": "claim",
+      "label": "death toll = 64",
+      "properties": {
+        "claim_id": "fema_official_01_C1",
+        "doc_id": "fema_official_01",
+        "cluster_id": "hurricane_maria",
+        "text": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+        "subject": "death toll",
+        "predicate": "has_value",
+        "value": "64",
+        "unit": "people",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Federal Emergency Management Agency (FEMA) Official Report"
+        }
+      }
+    },
+    "harvard_study_02": {
+      "id": "harvard_study_02",
+      "node_type": "document",
+      "label": "Doc: harvard_study_02",
+      "properties": {
+        "doc_id": "harvard_study_02",
+        "title": "Harvard T.H. Chan School of Public Health Study",
+        "cluster_id": "hurricane_maria"
+      }
+    },
+    "harvard_study_02_C1": {
+      "id": "harvard_study_02_C1",
+      "node_type": "claim",
+      "label": "hurricane maria in puerto rico, citing widespread post = 4,645",
+      "properties": {
+        "claim_id": "harvard_study_02_C1",
+        "doc_id": "harvard_study_02",
+        "cluster_id": "hurricane_maria",
+        "text": "An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.",
+        "subject": "hurricane maria in puerto rico, citing widespread post",
+        "predicate": "has_value",
+        "value": "4,645",
+        "unit": "people",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "academic_research",
+        "version_status": "preliminary_estimate",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Harvard T.H. Chan School of Public Health Study"
+        }
+      }
+    },
+    "gw_university_03": {
+      "id": "gw_university_03",
+      "node_type": "document",
+      "label": "Doc: gw_university_03",
+      "properties": {
+        "doc_id": "gw_university_03",
+        "title": "George Washington University Commissioned Milestone Report",
+        "cluster_id": "hurricane_maria"
+      }
+    },
+    "gw_university_03_C1": {
+      "id": "gw_university_03_C1",
+      "node_type": "claim",
+      "label": "the official commissioned review = 2,975",
+      "properties": {
+        "claim_id": "gw_university_03_C1",
+        "doc_id": "gw_university_03",
+        "cluster_id": "hurricane_maria",
+        "text": "The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018.",
+        "subject": "the official commissioned review",
+        "predicate": "asserts",
+        "value": "2,975",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "George Washington University Commissioned Milestone Report"
+        }
+      }
+    },
+    "hr_policy_v1": {
+      "id": "hr_policy_v1",
+      "node_type": "document",
+      "label": "Doc: hr_policy_v1",
+      "properties": {
+        "doc_id": "hr_policy_v1",
+        "title": "Corporate Standard HR Policy Manual (v1.0)",
+        "cluster_id": "leave_policy"
+      }
+    },
+    "hr_policy_v1_C1": {
+      "id": "hr_policy_v1_C1",
+      "node_type": "claim",
+      "label": "time permanent employees are = 24",
+      "properties": {
+        "claim_id": "hr_policy_v1_C1",
+        "doc_id": "hr_policy_v1",
+        "cluster_id": "leave_policy",
+        "text": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+        "subject": "time permanent employees are",
+        "predicate": "annual_leave_every_year_under_standard_company_policy",
+        "value": "24",
+        "unit": "days",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Corporate Standard HR Policy Manual (v1.0)"
+        }
+      }
+    },
+    "hr_policy_v1_C2": {
+      "id": "hr_policy_v1_C2",
+      "node_type": "claim",
+      "label": "nent employees are entitled to = 24",
+      "properties": {
+        "claim_id": "hr_policy_v1_C2",
+        "doc_id": "hr_policy_v1",
+        "cluster_id": "leave_policy",
+        "text": "Full-time permanent employees are entitled to 24 days of annual leave every year under standard company policy.",
+        "subject": "nent employees are entitled to",
+        "predicate": "has_value",
+        "value": "24",
+        "unit": "days",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Corporate Standard HR Policy Manual (v1.0)"
+        }
+      }
+    },
+    "hr_handbook_v2": {
+      "id": "hr_handbook_v2",
+      "node_type": "document",
+      "label": "Doc: hr_handbook_v2",
+      "properties": {
+        "doc_id": "hr_handbook_v2",
+        "title": "Updated Employee Handbook (v2.0 - 2026)",
+        "cluster_id": "leave_policy"
+      }
+    },
+    "hr_handbook_v2_C1": {
+      "id": "hr_handbook_v2_C1",
+      "node_type": "claim",
+      "label": "time staff members = 30",
+      "properties": {
+        "claim_id": "hr_handbook_v2_C1",
+        "doc_id": "hr_handbook_v2",
+        "cluster_id": "leave_policy",
+        "text": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+        "subject": "time staff members",
+        "predicate": "paid_annual_leave_per_company_handbook_v",
+        "value": "30",
+        "unit": "days",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Updated Employee Handbook (v2.0 - 2026)"
+        }
+      }
+    },
+    "hr_handbook_v2_C2": {
+      "id": "hr_handbook_v2_C2",
+      "node_type": "claim",
+      "label": "time staff members receive = 30",
+      "properties": {
+        "claim_id": "hr_handbook_v2_C2",
+        "doc_id": "hr_handbook_v2",
+        "cluster_id": "leave_policy",
+        "text": "Full-time staff members receive 30 days of paid annual leave per company handbook v2 approved by executive management.",
+        "subject": "time staff members receive",
+        "predicate": "has_value",
+        "value": "30",
+        "unit": "days",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Updated Employee Handbook (v2.0 - 2026)"
+        }
+      }
+    },
+    "probation_clause_03": {
+      "id": "probation_clause_03",
+      "node_type": "document",
+      "label": "Doc: probation_clause_03",
+      "properties": {
+        "doc_id": "probation_clause_03",
+        "title": "Onboarding & Probationary Policy Addendum",
+        "cluster_id": "leave_policy"
+      }
+    },
+    "probation_clause_03_C1": {
+      "id": "probation_clause_03_C1",
+      "node_type": "claim",
+      "label": "employees joining after july = 12",
+      "properties": {
+        "claim_id": "probation_clause_03_C1",
+        "doc_id": "probation_clause_03",
+        "cluster_id": "leave_policy",
+        "text": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment.",
+        "subject": "employees joining after july",
+        "predicate": "annual_leave_during_their_first_year_of_employment",
+        "value": "12",
+        "unit": "days",
+        "conditions": [
+          "joining after July are entitled to 12 days of annual leave during their first year of employment"
+        ],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Onboarding & Probationary Policy Addendum"
+        }
+      }
+    },
+    "probation_clause_03_C2": {
+      "id": "probation_clause_03_C2",
+      "node_type": "claim",
+      "label": "ing after july are entitled to = 12",
+      "properties": {
+        "claim_id": "probation_clause_03_C2",
+        "doc_id": "probation_clause_03",
+        "cluster_id": "leave_policy",
+        "text": "Employees joining after July are entitled to 12 days of annual leave during their first year of employment.",
+        "subject": "ing after july are entitled to",
+        "predicate": "has_value",
+        "value": "12",
+        "unit": "days",
+        "conditions": [
+          "joining after July are entitled to 12 days of annual leave during their first year of employment"
+        ],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Onboarding & Probationary Policy Addendum"
+        }
+      }
+    },
+    "cdc_report_01": {
+      "id": "cdc_report_01",
+      "node_type": "document",
+      "label": "Doc: cdc_report_01",
+      "properties": {
+        "doc_id": "cdc_report_01",
+        "title": "CDC Surveillance Bulletin",
+        "cluster_id": "vaccine_stats"
+      }
+    },
+    "cdc_report_01_C1": {
+      "id": "cdc_report_01_C1",
+      "node_type": "claim",
+      "label": "inical trial confirmed vaccine = 95",
+      "properties": {
+        "claim_id": "cdc_report_01_C1",
+        "doc_id": "cdc_report_01",
+        "cluster_id": "vaccine_stats",
+        "text": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+        "subject": "inical trial confirmed vaccine",
+        "predicate": "has_value",
+        "value": "95",
+        "unit": "percent",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "official_final",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "CDC Surveillance Bulletin"
+        }
+      }
+    },
+    "cdc_report_01_C2": {
+      "id": "cdc_report_01_C2",
+      "node_type": "claim",
+      "label": "confirmed vaccine efficacy of = 95",
+      "properties": {
+        "claim_id": "cdc_report_01_C2",
+        "doc_id": "cdc_report_01",
+        "cluster_id": "vaccine_stats",
+        "text": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+        "subject": "confirmed vaccine efficacy of",
+        "predicate": "has_value",
+        "value": "95",
+        "unit": "percent",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "official_final",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "CDC Surveillance Bulletin"
+        }
+      }
+    },
+    "reuters_wire_02": {
+      "id": "reuters_wire_02",
+      "node_type": "document",
+      "label": "Doc: reuters_wire_02",
+      "properties": {
+        "doc_id": "reuters_wire_02",
+        "title": "Reuters Global Health Wire",
+        "cluster_id": "vaccine_stats"
+      }
+    },
+    "reuters_wire_02_C1": {
+      "id": "reuters_wire_02_C1",
+      "node_type": "claim",
+      "label": "ed vaccine efficacy dropped to = 64",
+      "properties": {
+        "claim_id": "reuters_wire_02_C1",
+        "doc_id": "reuters_wire_02",
+        "cluster_id": "vaccine_stats",
+        "text": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.",
+        "subject": "ed vaccine efficacy dropped to",
+        "predicate": "has_value",
+        "value": "64",
+        "unit": "percent",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Reuters Global Health Wire"
+        }
+      }
+    },
+    "mn_01394_02": {
+      "id": "mn_01394_02",
+      "node_type": "document",
+      "label": "Doc: mn_01394_02",
+      "properties": {
+        "doc_id": "mn_01394_02",
+        "title": "Multi-News [mn_01394_02]",
+        "cluster_id": "mn_cluster_01394"
+      }
+    },
+    "mn_01394_02_C1": {
+      "id": "mn_01394_02_C1",
+      "node_type": "claim",
+      "label": "bayamón puerto rico (cnn) = evidence, and you need a body in order to fully examine a death.",
+      "properties": {
+        "claim_id": "mn_01394_02_C1",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Bayamón, Puerto Rico (CNN) In the world of forensic pathology, there's a morbid truism: Bodies are evidence, and you need a body in order to fully examine a death.",
+        "subject": "bayamón puerto rico (cnn)",
+        "predicate": "are",
+        "value": "evidence, and you need a body in order to fully examine a death.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C2": {
+      "id": "mn_01394_02_C2",
+      "node_type": "claim",
+      "label": "death toll = That poses a potentially major challenge for the Puerto Rica",
+      "properties": {
+        "claim_id": "mn_01394_02_C2",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "That poses a potentially major challenge for the Puerto Rican government's re-examination of deaths related to Hurricane Maria , which Gov. Ricardo Rosselló ordered Monday after investigations into the official death toll by CNN and other news organizations.",
+        "subject": "death toll",
+        "predicate": "asserts",
+        "value": "That poses a potentially major challenge for the Puerto Rica",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C3": {
+      "id": "mn_01394_02_C3",
+      "node_type": "claim",
+      "label": "thousands of people have = 20",
+      "properties": {
+        "claim_id": "mn_01394_02_C3",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Thousands of people have died since the storm on September 20, according to the Puerto Rican government.",
+        "subject": "thousands of people have",
+        "predicate": "asserts",
+        "value": "20",
+        "unit": null,
+        "conditions": [],
+        "temporal": "on September 20",
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C4": {
+      "id": "mn_01394_02_C4",
+      "node_type": "claim",
+      "label": "many if not most = Many, if not most, of those bodies have been buried or crema",
+      "properties": {
+        "claim_id": "mn_01394_02_C4",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Many, if not most, of those bodies have been buried or cremated.",
+        "subject": "many if not most",
+        "predicate": "asserts",
+        "value": "Many, if not most, of those bodies have been buried or crema",
+        "unit": null,
+        "conditions": [
+          "if not most"
+        ],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C5": {
+      "id": "mn_01394_02_C5",
+      "node_type": "claim",
+      "label": "that fact will severely = That fact will severely limit the US territory's efforts to ",
+      "properties": {
+        "claim_id": "mn_01394_02_C5",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "That fact will severely limit the US territory's efforts to re-analyze deaths, experts told CNN.",
+        "subject": "that fact will severely",
+        "predicate": "asserts",
+        "value": "That fact will severely limit the US territory's efforts to ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C6": {
+      "id": "mn_01394_02_C6",
+      "node_type": "claim",
+      "label": "at this point the = no way to do a thorough investigation of each individual case,\" said Eric Klinen",
+      "properties": {
+        "claim_id": "mn_01394_02_C6",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"At this point, the bodies have been buried, and there is no way to do a thorough investigation of each individual case,\" said Eric Klinenberg, director of the Institute for Public Knowledge at New York University and author of a book about deaths following a Chicago heat wave.",
+        "subject": "at this point the",
+        "predicate": "is",
+        "value": "no way to do a thorough investigation of each individual case,\" said Eric Klinen",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "academic_research",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C7": {
+      "id": "mn_01394_02_C7",
+      "node_type": "claim",
+      "label": "youd want to talk = \"You'd want to talk with next of kin and neighbors to find o",
+      "properties": {
+        "claim_id": "mn_01394_02_C7",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"You'd want to talk with next of kin and neighbors to find out what happened to the person, possibly with doctors as well.",
+        "subject": "youd want to talk",
+        "predicate": "asserts",
+        "value": "\"You'd want to talk with next of kin and neighbors to find o",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C8": {
+      "id": "mn_01394_02_C8",
+      "node_type": "claim",
+      "label": "but that is very = very difficult even in the best of times, and right now (many) people still don'",
+      "properties": {
+        "claim_id": "mn_01394_02_C8",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "But that is very difficult even in the best of times, and right now (many) people still don't have power,\" he said.",
+        "subject": "but that is very",
+        "predicate": "is",
+        "value": "very difficult even in the best of times, and right now (many) people still don'",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C9": {
+      "id": "mn_01394_02_C9",
+      "node_type": "claim",
+      "label": "it would require an = \"It would require an enormous effort.\" \n \n Rosselló said Mon",
+      "properties": {
+        "claim_id": "mn_01394_02_C9",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"It would require an enormous effort.\" \n \n Rosselló said Monday that Puerto Rico's Department of Public Safety and the Demographic Registry will re-examine every death that's occurred since the hurricane, regardless of whether the death certificate lists the hurricane as the possible manner of death.",
+        "subject": "it would require an",
+        "predicate": "asserts",
+        "value": "\"It would require an enormous effort.\" \n \n Rosselló said Mon",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C10": {
+      "id": "mn_01394_02_C10",
+      "node_type": "claim",
+      "label": "the statement from rossellós = The statement from Rosselló's office, however, did not speci",
+      "properties": {
+        "claim_id": "mn_01394_02_C10",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The statement from Rosselló's office, however, did not specify exactly how that review would be conducted.",
+        "subject": "the statement from rossellós",
+        "predicate": "asserts",
+        "value": "The statement from Rosselló's office, however, did not speci",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C11": {
+      "id": "mn_01394_02_C11",
+      "node_type": "claim",
+      "label": "a panel of experts = A panel of experts will be appointed to review the process, ",
+      "properties": {
+        "claim_id": "mn_01394_02_C11",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "A panel of experts will be appointed to review the process, according to the governor.",
+        "subject": "a panel of experts",
+        "predicate": "asserts",
+        "value": "A panel of experts will be appointed to review the process, ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C12": {
+      "id": "mn_01394_02_C12",
+      "node_type": "claim",
+      "label": "neither the governors office = Neither the governor's office nor the Department of Public S",
+      "properties": {
+        "claim_id": "mn_01394_02_C12",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Neither the governor's office nor the Department of Public Safety agreed to an interview on the details of the review.",
+        "subject": "neither the governors office",
+        "predicate": "asserts",
+        "value": "Neither the governor's office nor the Department of Public S",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C13": {
+      "id": "mn_01394_02_C13",
+      "node_type": "claim",
+      "label": "on wednesday a spokeswoman = still being determined and that the matter would be discussed at upcoming meetin",
+      "properties": {
+        "claim_id": "mn_01394_02_C13",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "On Wednesday, a spokeswoman for the governor told CNN that details on how the review would be conducted were still being determined and that the matter would be discussed at upcoming meetings.",
+        "subject": "on wednesday a spokeswoman",
+        "predicate": "were",
+        "value": "still being determined and that the matter would be discussed at upcoming meetin",
+        "unit": null,
+        "conditions": [],
+        "temporal": "On Wednesday",
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C14": {
+      "id": "mn_01394_02_C14",
+      "node_type": "claim",
+      "label": "death toll = 64",
+      "properties": {
+        "claim_id": "mn_01394_02_C14",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The official death toll from Hurricane Maria stands at 64.",
+        "subject": "death toll",
+        "predicate": "has_value",
+        "value": "64",
+        "unit": "count",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C15": {
+      "id": "mn_01394_02_C15",
+      "node_type": "claim",
+      "label": "in reality it may = In reality, it may be many times higher.",
+      "properties": {
+        "claim_id": "mn_01394_02_C15",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "In reality, it may be many times higher.",
+        "subject": "in reality it may",
+        "predicate": "asserts",
+        "value": "In reality, it may be many times higher.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C16": {
+      "id": "mn_01394_02_C16",
+      "node_type": "claim",
+      "label": "that funeral home directors and staff say were hurricane = 499",
+      "properties": {
+        "claim_id": "mn_01394_02_C16",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "In November, CNN surveyed half of the funeral homes in Puerto Rico and identified 499 deaths that funeral home directors and staff say were hurricane-related.",
+        "subject": "that funeral home directors and staff say were hurricane",
+        "predicate": "has_value",
+        "value": "499",
+        "unit": "deaths",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C17": {
+      "id": "mn_01394_02_C17",
+      "node_type": "claim",
+      "label": "later the new york = 2017",
+      "properties": {
+        "claim_id": "mn_01394_02_C17",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Later, The New York Times and academics calculated the number of \"excess deaths\" in 2017 compared with previous years.",
+        "subject": "later the new york",
+        "predicate": "asserts",
+        "value": "2017",
+        "unit": null,
+        "conditions": [],
+        "temporal": "in 2017",
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C18": {
+      "id": "mn_01394_02_C18",
+      "node_type": "claim",
+      "label": "that analysis led the = 1,000",
+      "properties": {
+        "claim_id": "mn_01394_02_C18",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "That analysis led the paper to suggest more than 1,000 people likely died in the storm.",
+        "subject": "that analysis led the",
+        "predicate": "asserts",
+        "value": "1,000",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C19": {
+      "id": "mn_01394_02_C19",
+      "node_type": "claim",
+      "label": "death toll = Puerto Rico's governor said Monday that statistical methods ",
+      "properties": {
+        "claim_id": "mn_01394_02_C19",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Puerto Rico's governor said Monday that statistical methods will not be used in reassessing the death toll.",
+        "subject": "death toll",
+        "predicate": "asserts",
+        "value": "Puerto Rico's governor said Monday that statistical methods ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C20": {
+      "id": "mn_01394_02_C20",
+      "node_type": "claim",
+      "label": "a legal process of = necessary, and every family deserves that the case of their loved ones be looked",
+      "properties": {
+        "claim_id": "mn_01394_02_C20",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"A legal process of certification by a coroner or a doctor is necessary, and every family deserves that the case of their loved ones be looked at independently and thoroughly,\" he said.",
+        "subject": "a legal process of",
+        "predicate": "is",
+        "value": "necessary, and every family deserves that the case of their loved ones be looked",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C21": {
+      "id": "mn_01394_02_C21",
+      "node_type": "claim",
+      "label": "the bureau of forensic = the only laboratory on the island authorized to classify deaths officially as hu",
+      "properties": {
+        "claim_id": "mn_01394_02_C21",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The Bureau of Forensic Sciences, in San Juan, the Puerto Rican capital, is the only laboratory on the island authorized to classify deaths officially as hurricane-related.",
+        "subject": "the bureau of forensic",
+        "predicate": "is",
+        "value": "the only laboratory on the island authorized to classify deaths officially as hu",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C22": {
+      "id": "mn_01394_02_C22",
+      "node_type": "claim",
+      "label": "pathologists conduct visual assessment = Pathologists conduct visual assessment and autopsies on some",
+      "properties": {
+        "claim_id": "mn_01394_02_C22",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Pathologists conduct visual assessment and autopsies on some corpses.",
+        "subject": "pathologists conduct visual assessment",
+        "predicate": "asserts",
+        "value": "Pathologists conduct visual assessment and autopsies on some",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C23": {
+      "id": "mn_01394_02_C23",
+      "node_type": "claim",
+      "label": "documents such as death = interviewed.",
+      "properties": {
+        "claim_id": "mn_01394_02_C23",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Documents such as death certificates also can be reviewed, and in some instances family members of the deceased are interviewed.",
+        "subject": "documents such as death",
+        "predicate": "are",
+        "value": "interviewed.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C24": {
+      "id": "mn_01394_02_C24",
+      "node_type": "claim",
+      "label": "after maria the forensics = After Maria, the forensics bureau reviewed many deaths and a",
+      "properties": {
+        "claim_id": "mn_01394_02_C24",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "After Maria, the forensics bureau reviewed many deaths and autopsied bodies before burial or cremation.",
+        "subject": "after maria the forensics",
+        "predicate": "asserts",
+        "value": "After Maria, the forensics bureau reviewed many deaths and a",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C25": {
+      "id": "mn_01394_02_C25",
+      "node_type": "claim",
+      "label": "but cnn also reported = never sent to the forensics office by doctors or other authorities and therefore",
+      "properties": {
+        "claim_id": "mn_01394_02_C25",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "But CNN also reported that some deaths possibly related to the hurricane were never sent to the forensics office by doctors or other authorities and therefore never were analyzed.",
+        "subject": "but cnn also reported",
+        "predicate": "were",
+        "value": "never sent to the forensics office by doctors or other authorities and therefore",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C26": {
+      "id": "mn_01394_02_C26",
+      "node_type": "claim",
+      "label": "the puerto rican government = not enough to classify deaths as hurricane-related, said Dr. Gregory J.",
+      "properties": {
+        "claim_id": "mn_01394_02_C26",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The Puerto Rican government could use death certificates to help re-examine deaths, but those documents alone are not enough to classify deaths as hurricane-related, said Dr. Gregory J.",
+        "subject": "the puerto rican government",
+        "predicate": "are",
+        "value": "not enough to classify deaths as hurricane-related, said Dr. Gregory J.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C27": {
+      "id": "mn_01394_02_C27",
+      "node_type": "claim",
+      "label": "davis director of the = Davis, director of the University of Kentucky's Forensic Pat",
+      "properties": {
+        "claim_id": "mn_01394_02_C27",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Davis, director of the University of Kentucky's Forensic Pathology Consultation Service.",
+        "subject": "davis director of the",
+        "predicate": "asserts",
+        "value": "Davis, director of the University of Kentucky's Forensic Pat",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "academic_research",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C28": {
+      "id": "mn_01394_02_C28",
+      "node_type": "claim",
+      "label": "death certificates unless filled = notoriously unreliable,\" Davis said.",
+      "properties": {
+        "claim_id": "mn_01394_02_C28",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"Death certificates, unless filled out by an experienced medical examiner/forensic pathologist, are notoriously unreliable,\" Davis said.",
+        "subject": "death certificates unless filled",
+        "predicate": "are",
+        "value": "notoriously unreliable,\" Davis said.",
+        "unit": null,
+        "conditions": [
+          "unless filled out by an experienced medical examiner/forensic pathologist"
+        ],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C29": {
+      "id": "mn_01394_02_C29",
+      "node_type": "claim",
+      "label": "other materials -- including = needed to make full sense of a death, he said.",
+      "properties": {
+        "claim_id": "mn_01394_02_C29",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Other materials -- including \"medical records, police reports, fire/EMS reports, and, though it takes a lot of effort, next-of-kin family statements\" -- are needed to make full sense of a death, he said.",
+        "subject": "other materials -- including",
+        "predicate": "are",
+        "value": "needed to make full sense of a death, he said.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C30": {
+      "id": "mn_01394_02_C30",
+      "node_type": "claim",
+      "label": "its labor intensive but = \"It's labor intensive, but if they want the right answers ra",
+      "properties": {
+        "claim_id": "mn_01394_02_C30",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"It's labor intensive, but if they want the right answers rather than rush answers, they'll do it,\" Davis said in an email to CNN.",
+        "subject": "its labor intensive but",
+        "predicate": "asserts",
+        "value": "\"It's labor intensive, but if they want the right answers ra",
+        "unit": null,
+        "conditions": [
+          "if they want the right answers rather than rush answers"
+        ],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C31": {
+      "id": "mn_01394_02_C31",
+      "node_type": "claim",
+      "label": "scientific methods are the = the most reliable way to understand how and why a person died, said Dr. Brian L.",
+      "properties": {
+        "claim_id": "mn_01394_02_C31",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Scientific methods are the most reliable way to understand how and why a person died, said Dr. Brian L.",
+        "subject": "scientific methods are the",
+        "predicate": "are",
+        "value": "the most reliable way to understand how and why a person died, said Dr. Brian L.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C32": {
+      "id": "mn_01394_02_C32",
+      "node_type": "claim",
+      "label": "peterson president of the = Peterson, president of the National Association of Medical E",
+      "properties": {
+        "claim_id": "mn_01394_02_C32",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Peterson, president of the National Association of Medical Examiners.",
+        "subject": "peterson president of the",
+        "predicate": "asserts",
+        "value": "Peterson, president of the National Association of Medical E",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C33": {
+      "id": "mn_01394_02_C33",
+      "node_type": "claim",
+      "label": "and there always could = And there always could be some dispute about the circumstanc",
+      "properties": {
+        "claim_id": "mn_01394_02_C33",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "And there always could be some dispute about the circumstances of a death -- especially regarding \"indirect\" hurricane deaths, or those that resulted from the conditions the storm created rather than the high winds and waters associated with the day of the storm, he said.",
+        "subject": "and there always could",
+        "predicate": "asserts",
+        "value": "And there always could be some dispute about the circumstanc",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C34": {
+      "id": "mn_01394_02_C34",
+      "node_type": "claim",
+      "label": "to properly certify a = \"To properly certify a death as other than natural (with res",
+      "properties": {
+        "claim_id": "mn_01394_02_C34",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"To properly certify a death as other than natural (with respect to manner), we like to have a medicolegal death investigation, an autopsy, and sometimes ancillary studies such as radiology, toxicology, etc.,\" he said.",
+        "subject": "to properly certify a",
+        "predicate": "asserts",
+        "value": "\"To properly certify a death as other than natural (with res",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C35": {
+      "id": "mn_01394_02_C35",
+      "node_type": "claim",
+      "label": "more to the point = \"More to the point, 'hurricane related' may be more a matter",
+      "properties": {
+        "claim_id": "mn_01394_02_C35",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"More to the point, 'hurricane related' may be more a matter of perception, anyway.",
+        "subject": "more to the point",
+        "predicate": "asserts",
+        "value": "\"More to the point, 'hurricane related' may be more a matter",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C36": {
+      "id": "mn_01394_02_C36",
+      "node_type": "claim",
+      "label": "natural deaths are harder = harder to accurately place in the 'hurricane-related' category as death from nat",
+      "properties": {
+        "claim_id": "mn_01394_02_C36",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Natural deaths are harder to accurately place in the 'hurricane-related' category as death from natural disease may occur at any time.\" \n \n Exhuming bodies to do those tests would be expensive and unlikely, he said.",
+        "subject": "natural deaths are harder",
+        "predicate": "are",
+        "value": "harder to accurately place in the 'hurricane-related' category as death from nat",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C37": {
+      "id": "mn_01394_02_C37",
+      "node_type": "claim",
+      "label": "it also may not = It also may not help the research, said Davis, from the Univ",
+      "properties": {
+        "claim_id": "mn_01394_02_C37",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "It also may not help the research, said Davis, from the University of Kentucky.",
+        "subject": "it also may not",
+        "predicate": "asserts",
+        "value": "It also may not help the research, said Davis, from the Univ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "academic_research",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C38": {
+      "id": "mn_01394_02_C38",
+      "node_type": "claim",
+      "label": "exhumation is incredibly expensive = incredibly expensive, involving multiple personnel digging, opening up the vault",
+      "properties": {
+        "claim_id": "mn_01394_02_C38",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"Exhumation is incredibly expensive, involving multiple personnel digging, opening up the vault, bringing up the casket, all with no guarantee that the body won't be quite decomposed or skeletonized, especially in a wet, hot climate such as Puerto Rico's,\" he said.",
+        "subject": "exhumation is incredibly expensive",
+        "predicate": "is",
+        "value": "incredibly expensive, involving multiple personnel digging, opening up the vault",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C39": {
+      "id": "mn_01394_02_C39",
+      "node_type": "claim",
+      "label": "still peterson said deaths = available.",
+      "properties": {
+        "claim_id": "mn_01394_02_C39",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Still, Peterson said, \"deaths can always be reviewed at any time\" with whatever information is available.",
+        "subject": "still peterson said deaths",
+        "predicate": "is",
+        "value": "available.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C40": {
+      "id": "mn_01394_02_C40",
+      "node_type": "claim",
+      "label": "davis said its possible = Davis said it's possible, although not ideal, to review a de",
+      "properties": {
+        "claim_id": "mn_01394_02_C40",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Davis said it's possible, although not ideal, to review a death without an autopsy.",
+        "subject": "davis said its possible",
+        "predicate": "asserts",
+        "value": "Davis said it's possible, although not ideal, to review a de",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C41": {
+      "id": "mn_01394_02_C41",
+      "node_type": "claim",
+      "label": "hurricane maria = using because of prolonged power outages, and José Rafael Sánchez Román, whose f",
+      "properties": {
+        "claim_id": "mn_01394_02_C41",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "After CNN's investigation, Puerto Rico added two deaths CNN highlighted to the official toll attributable to Hurricane Maria -- that of Quintín Vidal, who died in a fire started by a lantern he was using because of prolonged power outages, and José Rafael Sánchez Román, whose family said he died of a heart attack or stroke during the storm.",
+        "subject": "hurricane maria",
+        "predicate": "was",
+        "value": "using because of prolonged power outages, and José Rafael Sánchez Román, whose f",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C42": {
+      "id": "mn_01394_02_C42",
+      "node_type": "claim",
+      "label": "but three additional cases = But three additional cases highlighted by the network show h",
+      "properties": {
+        "claim_id": "mn_01394_02_C42",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "But three additional cases highlighted by the network show how much effort it would take the Puerto Rican government to reassess thousands of deaths that followed the hurricane.",
+        "subject": "but three additional cases",
+        "predicate": "asserts",
+        "value": "But three additional cases highlighted by the network show h",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C43": {
+      "id": "mn_01394_02_C43",
+      "node_type": "claim",
+      "label": "earlier this week the = Earlier this week, the Department of Public Safety told CNN ",
+      "properties": {
+        "claim_id": "mn_01394_02_C43",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Earlier this week, the Department of Public Safety told CNN those three additional cases do not warrant inclusion on the list of official deaths.",
+        "subject": "earlier this week the",
+        "predicate": "asserts",
+        "value": "Earlier this week, the Department of Public Safety told CNN ",
+        "unit": null,
+        "conditions": [],
+        "temporal": "Earlier",
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C44": {
+      "id": "mn_01394_02_C44",
+      "node_type": "claim",
+      "label": "robles díaz committed suicide = Robles Díaz committed suicide because of a pre-existing medi",
+      "properties": {
+        "claim_id": "mn_01394_02_C44",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Robles Díaz committed suicide because of a pre-existing medical condition, not because of the storm, according to a statement sent to CNN by the Department of Public Safety.",
+        "subject": "robles díaz committed suicide",
+        "predicate": "asserts",
+        "value": "Robles Díaz committed suicide because of a pre-existing medi",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C45": {
+      "id": "mn_01394_02_C45",
+      "node_type": "claim",
+      "label": "in a november interview = coming back.",
+      "properties": {
+        "claim_id": "mn_01394_02_C45",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "In a November interview, however, Robles' son told CNN that his father suffered from night terrors in which he ran into the street screaming about how floodwaters were coming back.",
+        "subject": "in a november interview",
+        "predicate": "were",
+        "value": "coming back.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C46": {
+      "id": "mn_01394_02_C46",
+      "node_type": "claim",
+      "label": "he sat by a = He sat by a window watching for the moment water would retur",
+      "properties": {
+        "claim_id": "mn_01394_02_C46",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "He sat by a window watching for the moment water would return to wash him away, Carlos Robles said.",
+        "subject": "he sat by a",
+        "predicate": "asserts",
+        "value": "He sat by a window watching for the moment water would retur",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C47": {
+      "id": "mn_01394_02_C47",
+      "node_type": "claim",
+      "label": "hurricane maria = no question his father committed suicide because of the stress of Hurricane Mari",
+      "properties": {
+        "claim_id": "mn_01394_02_C47",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "He told CNN there was no question his father committed suicide because of the stress of Hurricane Maria and its aftermath.",
+        "subject": "hurricane maria",
+        "predicate": "was",
+        "value": "no question his father committed suicide because of the stress of Hurricane Mari",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C48": {
+      "id": "mn_01394_02_C48",
+      "node_type": "claim",
+      "label": "yes he had been = beside the point.",
+      "properties": {
+        "claim_id": "mn_01394_02_C48",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Yes, he had been diagnosed with cancer, the son said, but that was beside the point.",
+        "subject": "yes he had been",
+        "predicate": "was",
+        "value": "beside the point.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C49": {
+      "id": "mn_01394_02_C49",
+      "node_type": "claim",
+      "label": "puerto rico did not = Puerto Rico did not add his death to the official tally.",
+      "properties": {
+        "claim_id": "mn_01394_02_C49",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Puerto Rico did not add his death to the official tally.",
+        "subject": "puerto rico did not",
+        "predicate": "asserts",
+        "value": "Puerto Rico did not add his death to the official tally.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C50": {
+      "id": "mn_01394_02_C50",
+      "node_type": "claim",
+      "label": "in the case of = never reviewed by the forensics office \"because the doctor certified the decease",
+      "properties": {
+        "claim_id": "mn_01394_02_C50",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "In the case of Pilar Guzmán Rios, whose family told CNN she died because a breathing machine she required couldn't run without power, and because the insulin that treated her diabetes could not be properly refrigerated, the case was never reviewed by the forensics office \"because the doctor certified the deceased on the death certificate as natural,\" the department said.",
+        "subject": "in the case of",
+        "predicate": "was",
+        "value": "never reviewed by the forensics office \"because the doctor certified the decease",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C51": {
+      "id": "mn_01394_02_C51",
+      "node_type": "claim",
+      "label": "the doctor francisco berio = The doctor, Francisco Berio, however, told CNN he made that ",
+      "properties": {
+        "claim_id": "mn_01394_02_C51",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The doctor, Francisco Berio, however, told CNN he made that determination without having seen Guzmán's body, and partly because he wanted her family to be able to bury her more quickly and forensic review would slow that process and prolong grief.",
+        "subject": "the doctor francisco berio",
+        "predicate": "asserts",
+        "value": "The doctor, Francisco Berio, however, told CNN he made that ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C52": {
+      "id": "mn_01394_02_C52",
+      "node_type": "claim",
+      "label": "investigators tried to interview = unsuccessful to the point where the relative did not respond to calls,\" an email",
+      "properties": {
+        "claim_id": "mn_01394_02_C52",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Investigators \"tried to interview the son of the deceased, but the attempts were unsuccessful to the point where the relative did not respond to calls,\" an emailed statement said.",
+        "subject": "investigators tried to interview",
+        "predicate": "were",
+        "value": "unsuccessful to the point where the relative did not respond to calls,\" an email",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C53": {
+      "id": "mn_01394_02_C53",
+      "node_type": "claim",
+      "label": "about 15% of cellular = 15",
+      "properties": {
+        "claim_id": "mn_01394_02_C53",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "About 15% of cellular sites remain nonfunctional because of the hurricane.",
+        "subject": "about 15% of cellular",
+        "predicate": "asserts",
+        "value": "15",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C54": {
+      "id": "mn_01394_02_C54",
+      "node_type": "claim",
+      "label": "its often difficult to = It's often difficult to receive calls from the mountainous i",
+      "properties": {
+        "claim_id": "mn_01394_02_C54",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "It's often difficult to receive calls from the mountainous interior of the island, where Guzmán's family lives.",
+        "subject": "its often difficult to",
+        "predicate": "asserts",
+        "value": "It's often difficult to receive calls from the mountainous i",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C55": {
+      "id": "mn_01394_02_C55",
+      "node_type": "claim",
+      "label": "the death cannot be = \"The death cannot be attributed to the hurricane,\" the Depar",
+      "properties": {
+        "claim_id": "mn_01394_02_C55",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"The death cannot be attributed to the hurricane,\" the Department of Public Safety said.",
+        "subject": "the death cannot be",
+        "predicate": "asserts",
+        "value": "\"The death cannot be attributed to the hurricane,\" the Depar",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C56": {
+      "id": "mn_01394_02_C56",
+      "node_type": "claim",
+      "label": "hurricane maria = Molina's son, Luis Alberto Molina, told CNN in November that",
+      "properties": {
+        "claim_id": "mn_01394_02_C56",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Molina's son, Luis Alberto Molina, told CNN in November that his father died of a heart attack because of the stress of running a funeral home after Hurricane Maria.",
+        "subject": "hurricane maria",
+        "predicate": "asserts",
+        "value": "Molina's son, Luis Alberto Molina, told CNN in November that",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C57": {
+      "id": "mn_01394_02_C57",
+      "node_type": "claim",
+      "label": "the department said it = The department said it \"investigated the case and requested ",
+      "properties": {
+        "claim_id": "mn_01394_02_C57",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The department said it \"investigated the case and requested his medical file.\" \"The gentleman had health conditions such as high blood pressure and cardiovascular disorders.",
+        "subject": "the department said it",
+        "predicate": "asserts",
+        "value": "The department said it \"investigated the case and requested ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C58": {
+      "id": "mn_01394_02_C58",
+      "node_type": "claim",
+      "label": "on october 8 2017 = 8",
+      "properties": {
+        "claim_id": "mn_01394_02_C58",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "On October 8, 2017, he arrived at the hospital due to a chest pain that he was suffering two days before receiving medical attention.",
+        "subject": "on october 8 2017",
+        "predicate": "was",
+        "value": "8",
+        "unit": null,
+        "conditions": [],
+        "temporal": "On October 8, 2017",
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C59": {
+      "id": "mn_01394_02_C59",
+      "node_type": "claim",
+      "label": "hurricane maria = Neither the patient nor the relatives in the interview condu",
+      "properties": {
+        "claim_id": "mn_01394_02_C59",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Neither the patient nor the relatives in the interview conducted by the doctors in the hospital attribute his situation to Hurricane Maria.",
+        "subject": "hurricane maria",
+        "predicate": "asserts",
+        "value": "Neither the patient nor the relatives in the interview condu",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C60": {
+      "id": "mn_01394_02_C60",
+      "node_type": "claim",
+      "label": "molina died on october = 11",
+      "properties": {
+        "claim_id": "mn_01394_02_C60",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Molina died on October 11, 2017.",
+        "subject": "molina died on october",
+        "predicate": "asserts",
+        "value": "11",
+        "unit": null,
+        "conditions": [],
+        "temporal": "on October 11, 2017",
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C61": {
+      "id": "mn_01394_02_C61",
+      "node_type": "claim",
+      "label": "the death cannot be = The death cannot be attributed to the hurricane.\" \n \n Any de",
+      "properties": {
+        "claim_id": "mn_01394_02_C61",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The death cannot be attributed to the hurricane.\" \n \n Any death that resulted from the storm or the conditions it created should be counted as part of the official toll, according to Puerto Rican officials.",
+        "subject": "the death cannot be",
+        "predicate": "asserts",
+        "value": "The death cannot be attributed to the hurricane.\" \n \n Any de",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C62": {
+      "id": "mn_01394_02_C62",
+      "node_type": "claim",
+      "label": "hurricane maria = attributing to Hurricane Maria.",
+      "properties": {
+        "claim_id": "mn_01394_02_C62",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Heart attacks and suicides are included on the official list of deaths that Puerto Rico is attributing to Hurricane Maria.",
+        "subject": "hurricane maria",
+        "predicate": "is",
+        "value": "attributing to Hurricane Maria.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C63": {
+      "id": "mn_01394_02_C63",
+      "node_type": "claim",
+      "label": "the information matters not = The information matters not only for the accuracy of the cou",
+      "properties": {
+        "claim_id": "mn_01394_02_C63",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "The information matters not only for the accuracy of the count, and the public's understanding of the magnitude of the disaster, but also to families of the deceased.",
+        "subject": "the information matters not",
+        "predicate": "asserts",
+        "value": "The information matters not only for the accuracy of the cou",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C64": {
+      "id": "mn_01394_02_C64",
+      "node_type": "claim",
+      "label": "they may be eligible = They may be eligible for money from the Federal Emergency Ma",
+      "properties": {
+        "claim_id": "mn_01394_02_C64",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "They may be eligible for money from the Federal Emergency Management Agency to cover some funeral expenses.",
+        "subject": "they may be eligible",
+        "predicate": "asserts",
+        "value": "They may be eligible for money from the Federal Emergency Ma",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C65": {
+      "id": "mn_01394_02_C65",
+      "node_type": "claim",
+      "label": "every life is more = more than a number, and every death must have a name and vital information attac",
+      "properties": {
+        "claim_id": "mn_01394_02_C65",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"Every life is more than a number, and every death must have a name and vital information attached to it, as well as an accurate accounting of the facts related to their passing.",
+        "subject": "every life is more",
+        "predicate": "is",
+        "value": "more than a number, and every death must have a name and vital information attac",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C66": {
+      "id": "mn_01394_02_C66",
+      "node_type": "claim",
+      "label": "thats the law the = That's the law,\" the governor said in Monday's announcement.",
+      "properties": {
+        "claim_id": "mn_01394_02_C66",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "That's the law,\" the governor said in Monday's announcement.",
+        "subject": "thats the law the",
+        "predicate": "asserts",
+        "value": "That's the law,\" the governor said in Monday's announcement.",
+        "unit": null,
+        "conditions": [],
+        "temporal": "in Monday",
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C67": {
+      "id": "mn_01394_02_C67",
+      "node_type": "claim",
+      "label": "davis the university of = Davis, the University of Kentucky professor and medical doct",
+      "properties": {
+        "claim_id": "mn_01394_02_C67",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "Davis, the University of Kentucky professor and medical doctor, said it's worth the effort to examine cases individually.",
+        "subject": "davis the university of",
+        "predicate": "asserts",
+        "value": "Davis, the University of Kentucky professor and medical doct",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "academic_research",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C68": {
+      "id": "mn_01394_02_C68",
+      "node_type": "claim",
+      "label": "and its possible with = And it's possible with proper funding.",
+      "properties": {
+        "claim_id": "mn_01394_02_C68",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "And it's possible with proper funding.",
+        "subject": "and its possible with",
+        "predicate": "asserts",
+        "value": "And it's possible with proper funding.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_01394_02_C69": {
+      "id": "mn_01394_02_C69",
+      "node_type": "claim",
+      "label": "its never too late = \"It's never too late to try,\" he said.",
+      "properties": {
+        "claim_id": "mn_01394_02_C69",
+        "doc_id": "mn_01394_02",
+        "cluster_id": "mn_cluster_01394",
+        "text": "\"It's never too late to try,\" he said.",
+        "subject": "its never too late",
+        "predicate": "asserts",
+        "value": "\"It's never too late to try,\" he said.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_01394_02]"
+        }
+      }
+    },
+    "mn_00525_02": {
+      "id": "mn_00525_02",
+      "node_type": "document",
+      "label": "Doc: mn_00525_02",
+      "properties": {
+        "doc_id": "mn_00525_02",
+        "title": "Multi-News [mn_00525_02]",
+        "cluster_id": "mn_cluster_00525"
+      }
+    },
+    "mn_00525_02_C1": {
+      "id": "mn_00525_02_C1",
+      "node_type": "claim",
+      "label": "hurricane michael = The Santa Rosa County Sheriff's Office issued a fake \"no tre",
+      "properties": {
+        "claim_id": "mn_00525_02_C1",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "The Santa Rosa County Sheriff's Office issued a fake \"no trespassing\" notice for The Weather Channel's Jim Cantore ahead of Hurricane Michael. (Photo: Courtesy of Santa Rosa County Sheriff's Office) \n \n The Santa Rosa County Sheriff's Office has a playful message for The Weather Channel's Jim Cantore: Stay away from here.",
+        "subject": "hurricane michael",
+        "predicate": "asserts",
+        "value": "The Santa Rosa County Sheriff's Office issued a fake \"no tre",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C2": {
+      "id": "mn_00525_02_C2",
+      "node_type": "claim",
+      "label": "hurricane michael = As the Panhandle braces for a serious storm with Hurricane M",
+      "properties": {
+        "claim_id": "mn_00525_02_C2",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "As the Panhandle braces for a serious storm with Hurricane Michael, the law enforcement agency took a friendly jab at the meteorologist who has a reputation for being the one guy you really don't want to see when there's a weather disaster in your area.",
+        "subject": "hurricane michael",
+        "predicate": "asserts",
+        "value": "As the Panhandle braces for a serious storm with Hurricane M",
+        "unit": null,
+        "conditions": [
+          "when there's a weather disaster in your area"
+        ],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C3": {
+      "id": "mn_00525_02_C3",
+      "node_type": "claim",
+      "label": "the srso turned to = The SRSO turned to Facebook to issue a fake trespass warning",
+      "properties": {
+        "claim_id": "mn_00525_02_C3",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "The SRSO turned to Facebook to issue a fake trespass warning for Cantore.",
+        "subject": "the srso turned to",
+        "predicate": "asserts",
+        "value": "The SRSO turned to Facebook to issue a fake trespass warning",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C4": {
+      "id": "mn_00525_02_C4",
+      "node_type": "claim",
+      "label": "hurricane michael = 'monster storm' expected to get more dangerous \n \n Get ready now: Hurricane Mich",
+      "properties": {
+        "claim_id": "mn_00525_02_C4",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "The warning — complete with photos and a physical description of the weather man — identifies Cantore as a \"person of interest\" and adds that the SRSO would prefer he make \"non-business related visits only\" and \"winter months preferred.\" \n \n Bracing for the storm: Hurricane Michael is 'monster storm' expected to get more dangerous \n \n Get ready now: Hurricane Michael: How to prepare before a hurricane \n \n \"Everyone know what's in store when Jim Cantore shows up.",
+        "subject": "hurricane michael",
+        "predicate": "is",
+        "value": "'monster storm' expected to get more dangerous \n \n Get ready now: Hurricane Mich",
+        "unit": null,
+        "conditions": [
+          "when Jim Cantore shows up"
+        ],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C5": {
+      "id": "mn_00525_02_C5",
+      "node_type": "claim",
+      "label": "so we issued a = 7,200",
+      "properties": {
+        "claim_id": "mn_00525_02_C5",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "So we issued a little notice,\" reads the SRSO Facebook post, which had been shared more than 7,200 times as of 9 p.m.",
+        "subject": "so we issued a",
+        "predicate": "asserts",
+        "value": "7,200",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C6": {
+      "id": "mn_00525_02_C6",
+      "node_type": "claim",
+      "label": "the sheriffs office makes = not a real trespass.",
+      "properties": {
+        "claim_id": "mn_00525_02_C6",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "The Sheriff's Office makes it clear the trespassing warning isn't real, adding a line at the bottom of the warning that reads, \"This is not a real trespass.",
+        "subject": "the sheriffs office makes",
+        "predicate": "is",
+        "value": "not a real trespass.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C7": {
+      "id": "mn_00525_02_C7",
+      "node_type": "claim",
+      "label": "hurricane michael = cautioning Panhandle residents to brace for a massive storm as Hurricane Michael",
+      "properties": {
+        "claim_id": "mn_00525_02_C7",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "We like Jim, just not under these conditions.\" \n \n Jokes aside, officials are cautioning Panhandle residents to brace for a massive storm as Hurricane Michael approaches the Gulf Coast.",
+        "subject": "hurricane michael",
+        "predicate": "are",
+        "value": "cautioning Panhandle residents to brace for a massive storm as Hurricane Michael",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "official_final",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C8": {
+      "id": "mn_00525_02_C8",
+      "node_type": "claim",
+      "label": "the hurricane could pick = 3",
+      "properties": {
+        "claim_id": "mn_00525_02_C8",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "The hurricane could pick up speed Tuesday and start affecting the Gulf Coast before making landfall as a Category 3 hurricane Wednesday.",
+        "subject": "the hurricane could pick",
+        "predicate": "asserts",
+        "value": "3",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00525_02_C9": {
+      "id": "mn_00525_02_C9",
+      "node_type": "claim",
+      "label": "read or share this = 2018",
+      "properties": {
+        "claim_id": "mn_00525_02_C9",
+        "doc_id": "mn_00525_02",
+        "cluster_id": "mn_cluster_00525",
+        "text": "Read or Share this story: https://www.pnj.com/story/news/2018/10/08/jim-cantore-no-trespassing-hurricane-michael-florida-santa-rosa-county-sheriffs-office/1573951002/",
+        "subject": "read or share this",
+        "predicate": "asserts",
+        "value": "2018",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00525_02]"
+        }
+      }
+    },
+    "mn_00292_02": {
+      "id": "mn_00292_02",
+      "node_type": "document",
+      "label": "Doc: mn_00292_02",
+      "properties": {
+        "doc_id": "mn_00292_02",
+        "title": "Multi-News [mn_00292_02]",
+        "cluster_id": "mn_cluster_00292"
+      }
+    },
+    "mn_00292_02_C1": {
+      "id": "mn_00292_02_C1",
+      "node_type": "claim",
+      "label": "death toll = ordered into action Friday and hundreds of people urged to flee rising floodwate",
+      "properties": {
+        "claim_id": "mn_00292_02_C1",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "CHICAGO — The Illinois National Guard was ordered into action Friday and hundreds of people urged to flee rising floodwaters, as the death toll from days of heavy rain in the U.S. Midwest mounted.",
+        "subject": "death toll",
+        "predicate": "was",
+        "value": "ordered into action Friday and hundreds of people urged to flee rising floodwate",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C2": {
+      "id": "mn_00292_02_C2",
+      "node_type": "claim",
+      "label": "swathes of the united = Swathes of the United States have been buffeted in the last ",
+      "properties": {
+        "claim_id": "mn_00292_02_C2",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Swathes of the United States have been buffeted in the last week by tornadoes, storms and torrential rain, while the U.S. East Coast has seen unseasonably warm weather over the holiday season.",
+        "subject": "swathes of the united",
+        "predicate": "asserts",
+        "value": "Swathes of the United States have been buffeted in the last ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C3": {
+      "id": "mn_00292_02_C3",
+      "node_type": "claim",
+      "label": "missouri and illinois have = Missouri and Illinois have been particularly hard hit from t",
+      "properties": {
+        "claim_id": "mn_00292_02_C3",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Missouri and Illinois have been particularly hard hit from the record-breaking and relentless deluge in the past week.",
+        "subject": "missouri and illinois have",
+        "predicate": "asserts",
+        "value": "Missouri and Illinois have been particularly hard hit from t",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C4": {
+      "id": "mn_00292_02_C4",
+      "node_type": "claim",
+      "label": "death toll = 23",
+      "properties": {
+        "claim_id": "mn_00292_02_C4",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "The death toll from the flooding in the Midwest rose to 23, CNN said.",
+        "subject": "death toll",
+        "predicate": "has_value",
+        "value": "23",
+        "unit": "count",
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.92,
+        "metadata": {
+          "match_type": "numerical_assertion",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C5": {
+      "id": "mn_00292_02_C5",
+      "node_type": "claim",
+      "label": "fifteen of the dead = in Missouri and eight in Illinois.",
+      "properties": {
+        "claim_id": "mn_00292_02_C5",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Fifteen of the dead were in Missouri and eight in Illinois.",
+        "subject": "fifteen of the dead",
+        "predicate": "were",
+        "value": "in Missouri and eight in Illinois.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C6": {
+      "id": "mn_00292_02_C6",
+      "node_type": "claim",
+      "label": "but the toll could = But the toll could rise, with increasing concerns about the ",
+      "properties": {
+        "claim_id": "mn_00292_02_C6",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "But the toll could rise, with increasing concerns about the fate of two missing Illinois teenagers last seen several days ago.",
+        "subject": "but the toll could",
+        "predicate": "asserts",
+        "value": "But the toll could rise, with increasing concerns about the ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C7": {
+      "id": "mn_00292_02_C7",
+      "node_type": "claim",
+      "label": "one of them delia = 18",
+      "properties": {
+        "claim_id": "mn_00292_02_C7",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "One of them, Delia Ann Stacey, 18, was last heard of on Monday, when she sent a text message to her family saying simply “Help,” the Herrin Police Department said in a statement on Facebook.",
+        "subject": "one of them delia",
+        "predicate": "was",
+        "value": "18",
+        "unit": null,
+        "conditions": [
+          "when she sent a text message to her family saying simply “Help"
+        ],
+        "temporal": "on Monday",
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C8": {
+      "id": "mn_00292_02_C8",
+      "node_type": "claim",
+      "label": "“further contact with stacey = “Further contact with Stacey via her phone has been unsucces",
+      "properties": {
+        "claim_id": "mn_00292_02_C8",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "“Further contact with Stacey via her phone has been unsuccessful, as has the use of all resources available in determining its location,” it said.",
+        "subject": "“further contact with stacey",
+        "predicate": "asserts",
+        "value": "“Further contact with Stacey via her phone has been unsucces",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C9": {
+      "id": "mn_00292_02_C9",
+      "node_type": "claim",
+      "label": "there were growing fears = growing fears, too, for residents in southern Illinois, where the rising Mississ",
+      "properties": {
+        "claim_id": "mn_00292_02_C9",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "There were growing fears, too, for residents in southern Illinois, where the rising Mississippi River reportedly topped a levee, putting several towns and rural communities at risk.",
+        "subject": "there were growing fears",
+        "predicate": "were",
+        "value": "growing fears, too, for residents in southern Illinois, where the rising Mississ",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C10": {
+      "id": "mn_00292_02_C10",
+      "node_type": "claim",
+      "label": "hundreds of people were = urged to evacuate.",
+      "properties": {
+        "claim_id": "mn_00292_02_C10",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Hundreds of people were urged to evacuate.",
+        "subject": "hundreds of people were",
+        "predicate": "were",
+        "value": "urged to evacuate.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C11": {
+      "id": "mn_00292_02_C11",
+      "node_type": "claim",
+      "label": "illinois national guard = in increasing danger in the days to come.",
+      "properties": {
+        "claim_id": "mn_00292_02_C11",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Illinois Governor Bruce Rauner, who toured some of the affected communities, tweeted: “I have ordered Illinois National Guard soldiers into active duty to aid local efforts to save lives and mitigate flood damage in Southern Illinois.” \n \n Forecasters warned that southern U.S. states were in increasing danger in the days to come.",
+        "subject": "illinois national guard",
+        "predicate": "were",
+        "value": "in increasing danger in the days to come.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "official_government",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C12": {
+      "id": "mn_00292_02_C12",
+      "node_type": "claim",
+      "label": "“major flooding is occurring = occurring or forecast on the Mississippi and Ohio rivers and tributaries in Miss",
+      "properties": {
+        "claim_id": "mn_00292_02_C12",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "“Major flooding is occurring or forecast on the Mississippi and Ohio rivers and tributaries in Missouri, Illinois, and Kentucky, with record flooding at several locations,” the National Weather Service said.",
+        "subject": "“major flooding is occurring",
+        "predicate": "is",
+        "value": "occurring or forecast on the Mississippi and Ohio rivers and tributaries in Miss",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C13": {
+      "id": "mn_00292_02_C13",
+      "node_type": "claim",
+      "label": "“major flooding is also = also occurring on the Arkansas River and tributaries in Arkansas.",
+      "properties": {
+        "claim_id": "mn_00292_02_C13",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "“Major flooding is also occurring on the Arkansas River and tributaries in Arkansas.",
+        "subject": "“major flooding is also",
+        "predicate": "is",
+        "value": "also occurring on the Arkansas River and tributaries in Arkansas.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C14": {
+      "id": "mn_00292_02_C14",
+      "node_type": "claim",
+      "label": "floodwaters will move downstream = some relief, however, in the St.",
+      "properties": {
+        "claim_id": "mn_00292_02_C14",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Floodwaters will move downstream over the next couple of weeks, with significant river flooding expected for the lower Mississippi into mid-January.” \n \n There was some relief, however, in the St.",
+        "subject": "floodwaters will move downstream",
+        "predicate": "was",
+        "value": "some relief, however, in the St.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C15": {
+      "id": "mn_00292_02_C15",
+      "node_type": "claim",
+      "label": "louis area of missouri = at last receding.",
+      "properties": {
+        "claim_id": "mn_00292_02_C15",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "Louis area of Missouri, where flooding was at last receding.",
+        "subject": "louis area of missouri",
+        "predicate": "was",
+        "value": "at last receding.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C16": {
+      "id": "mn_00292_02_C16",
+      "node_type": "claim",
+      "label": "for many the big = For many, the big cleanup now begins.",
+      "properties": {
+        "claim_id": "mn_00292_02_C16",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "For many, the big cleanup now begins.",
+        "subject": "for many the big",
+        "predicate": "asserts",
+        "value": "For many, the big cleanup now begins.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C17": {
+      "id": "mn_00292_02_C17",
+      "node_type": "claim",
+      "label": "the more unfortunate saw = The more unfortunate saw their homes wiped out.",
+      "properties": {
+        "claim_id": "mn_00292_02_C17",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "The more unfortunate saw their homes wiped out.",
+        "subject": "the more unfortunate saw",
+        "predicate": "asserts",
+        "value": "The more unfortunate saw their homes wiped out.",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C18": {
+      "id": "mn_00292_02_C18",
+      "node_type": "claim",
+      "label": "we have nowhere to = 44",
+      "properties": {
+        "claim_id": "mn_00292_02_C18",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "We have nowhere to go,” Damon Thorne, 44, told ABC News.",
+        "subject": "we have nowhere to",
+        "predicate": "asserts",
+        "value": "44",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    },
+    "mn_00292_02_C19": {
+      "id": "mn_00292_02_C19",
+      "node_type": "claim",
+      "label": "he and his 60-year-old = 60",
+      "properties": {
+        "claim_id": "mn_00292_02_C19",
+        "doc_id": "mn_00292_02",
+        "cluster_id": "mn_cluster_00292",
+        "text": "He and his 60-year-old mother Linda were staying at a Red Cross shelter at a church after their mobile home park in Arnold, Missouri was washed away by the surging Meramec River.",
+        "subject": "he and his 60-year-old",
+        "predicate": "was",
+        "value": "60",
+        "unit": null,
+        "conditions": [],
+        "temporal": null,
+        "authority_tier": "news_outlet",
+        "version_status": "unspecified",
+        "confidence": 0.85,
+        "metadata": {
+          "match_type": "factual_statement",
+          "source_title": "Multi-News [mn_00292_02]"
+        }
+      }
+    }
+  },
+  "edges": [
+    {
+      "source_id": "fema_official_01_C1",
+      "target_id": "harvard_study_02_C1",
+      "relation": "CONTRADICTS",
+      "confidence": 0.92,
+      "severity": "critical",
+      "properties": {
+        "explanation": "Temporal revision detected: One source provides a preliminary estimate (preliminary_estimate) while the other provides an official or updated count. The claims reflect evolving data rather than static disagreement."
+      }
+    },
+    {
+      "source_id": "fema_official_01_C1",
+      "target_id": "harvard_study_02_C1",
+      "relation": "SUPERSEDES",
+      "confidence": 0.92,
+      "severity": "critical",
+      "properties": {
+        "explanation": "Claim A (fema_official_01_C1) represents an updated/finalized account superseding earlier preliminary reporting."
+      }
+    },
+    {
+      "source_id": "fema_official_01_C1",
+      "target_id": "gw_university_03_C1",
+      "relation": "CONTRADICTS",
+      "confidence": 0.9772033613445378,
+      "severity": "critical",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'death toll' (Value: '64' vs '2,975') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "hr_policy_v1_C1",
+      "target_id": "hr_handbook_v2_C1",
+      "relation": "CONTRADICTS",
+      "confidence": 0.876,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "hr_policy_v1_C1",
+      "target_id": "hr_handbook_v2_C2",
+      "relation": "CONTRADICTS",
+      "confidence": 0.876,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'time permanent employees are' (Value: '24' vs '30') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C1",
+      "target_id": "hr_policy_v1_C1",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C2",
+      "target_id": "hr_policy_v1_C1",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "hr_policy_v1_C2",
+      "target_id": "hr_handbook_v2_C1",
+      "relation": "CONTRADICTS",
+      "confidence": 0.876,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "hr_policy_v1_C2",
+      "target_id": "hr_handbook_v2_C2",
+      "relation": "CONTRADICTS",
+      "confidence": 0.876,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'nent employees are entitled to' (Value: '24' vs '30') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C1",
+      "target_id": "hr_policy_v1_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C2",
+      "target_id": "hr_policy_v1_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C1",
+      "target_id": "hr_handbook_v2_C1",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C2",
+      "target_id": "hr_handbook_v2_C1",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C1",
+      "target_id": "hr_handbook_v2_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C1' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "probation_clause_03_C2",
+      "target_id": "hr_handbook_v2_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'probation_clause_03_C2' applies under specific conditions (joining after July are entitled to 12 days of annual leave during their first year of employment), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "cdc_report_01_C1",
+      "target_id": "reuters_wire_02_C1",
+      "relation": "CONTRADICTS",
+      "confidence": 0.8924210526315789,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'inical trial confirmed vaccine' (Value: '95' vs '64') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "cdc_report_01_C2",
+      "target_id": "reuters_wire_02_C1",
+      "relation": "CONTRADICTS",
+      "confidence": 0.8924210526315789,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'confirmed vaccine efficacy of' (Value: '95' vs '64') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C1",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C1",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C6",
+      "target_id": "mn_01394_02_C2",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C5",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C5",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C6",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Chicago, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C6",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Chicago, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C9",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C9",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C14",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_01394_02_C14",
+      "target_id": "mn_00292_02_C4",
+      "relation": "CONTRADICTS",
+      "confidence": 0.93328125,
+      "severity": "critical",
+      "properties": {
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'death toll' (Value: '64' vs '23') without conditional qualifiers or differing scopes."
+      }
+    },
+    {
+      "source_id": "mn_01394_02_C14",
+      "target_id": "mn_00292_02_C4",
+      "relation": "SUPERSEDES",
+      "confidence": 0.93328125,
+      "severity": "critical",
+      "properties": {
+        "explanation": "Claim A (mn_01394_02_C14) takes precedence due to superior source authority (official_government) and formal status (official_final)."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C6",
+      "target_id": "mn_01394_02_C14",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C16",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C16",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C17",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to New York, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C17",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to New York, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C19",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C19",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C6",
+      "target_id": "mn_01394_02_C19",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C21",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C21",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C23",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C23",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C24",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C24",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C25",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C25",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C26",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C26",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C28",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'mn_01394_02_C28' applies under specific conditions (unless filled out by an experienced medical examiner/forensic pathologist), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C28",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.91,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Conditional exception detected: Claim 'mn_01394_02_C28' applies under specific conditions (unless filled out by an experienced medical examiner/forensic pathologist), whereas the other represents a baseline policy or general scope. These statements describe distinct cases rather than a direct contradiction."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C29",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C29",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C33",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C33",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C34",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C34",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C36",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C36",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C39",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C39",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C40",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C40",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C41",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C41",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C6",
+      "target_id": "mn_01394_02_C41",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C42",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C42",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C43",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C43",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C11",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C12",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C13",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C14",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C15",
+      "target_id": "mn_01394_02_C45",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C49",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C49",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C50",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C50",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C55",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C55",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C58",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C6",
+      "target_id": "mn_01394_02_C58",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C11",
+      "target_id": "mn_01394_02_C58",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C61",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C61",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C6",
+      "target_id": "mn_01394_02_C61",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C62",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Illinois. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C62",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.93,
+      "severity": "informational",
+      "properties": {
+        "explanation": "Geographic scope difference: Claim A refers to Puerto Rico, while Claim B refers to Midwest. They report on different regional impacts rather than contradicting each other."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C1",
+      "target_id": "mn_01394_02_C65",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    },
+    {
+      "source_id": "mn_00292_02_C4",
+      "target_id": "mn_01394_02_C65",
+      "relation": "CONDITIONAL_EXCEPTION",
+      "confidence": 0.78,
+      "severity": "informational",
+      "properties": {
+        "explanation": "NLI classified relation as 'neutral'. Contextual analysis confirms statements are consistent or unrelated."
+      }
+    }
+  ]
+}

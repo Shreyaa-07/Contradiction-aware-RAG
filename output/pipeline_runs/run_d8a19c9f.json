@@ -1,0 +1,185 @@
+{
+  "query": "vaccine clinical trial efficacy rate",
+  "elapsed_seconds": 0.01,
+  "documents": [
+    {
+      "rank": 1,
+      "doc_id": "cdc_report_01",
+      "cluster_id": "vaccine_stats",
+      "source": "CDC Surveillance Bulletin",
+      "text": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+      "snippet": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+      "score": 0.83
+    },
+    {
+      "rank": 2,
+      "doc_id": "reuters_wire_02",
+      "cluster_id": "vaccine_stats",
+      "source": "Reuters Global Health Wire",
+      "text": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.",
+      "snippet": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.",
+      "score": 0.78
+    }
+  ],
+  "extracted_claims": [
+    {
+      "claim_id": "cdc_report_01_C1",
+      "doc_id": "cdc_report_01",
+      "cluster_id": "vaccine_stats",
+      "text": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+      "subject": "inical trial confirmed vaccine",
+      "predicate": "has_value",
+      "value": "95",
+      "unit": "percent",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "official_final",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "CDC Surveillance Bulletin"
+      }
+    },
+    {
+      "claim_id": "cdc_report_01_C2",
+      "doc_id": "cdc_report_01",
+      "cluster_id": "vaccine_stats",
+      "text": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+      "subject": "confirmed vaccine efficacy of",
+      "predicate": "has_value",
+      "value": "95",
+      "unit": "percent",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "news_outlet",
+      "version_status": "official_final",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "CDC Surveillance Bulletin"
+      }
+    },
+    {
+      "claim_id": "reuters_wire_02_C1",
+      "doc_id": "reuters_wire_02",
+      "cluster_id": "vaccine_stats",
+      "text": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.",
+      "subject": "ed vaccine efficacy dropped to",
+      "predicate": "has_value",
+      "value": "64",
+      "unit": "percent",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "official_government",
+      "version_status": "unspecified",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Reuters Global Health Wire"
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "informational",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'inical trial confirmed vaccine' (Value: '95' vs '64') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+        "hypothesis_quote": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants."
+      },
+      "confidence": 0.8924,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "cdc_report_01_C1",
+      "hypothesis_id": "reuters_wire_02_C1"
+    },
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "informational",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'confirmed vaccine efficacy of' (Value: '95' vs '64') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+        "hypothesis_quote": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants."
+      },
+      "confidence": 0.8924,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "cdc_report_01_C2",
+      "hypothesis_id": "reuters_wire_02_C1"
+    }
+  ],
+  "resolutions": [
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.8924,
+      "authority_assessment": "Authority: [cdc_report_01_C1]=news_outlet (weight 2) vs [reuters_wire_02_C1]=official_government (weight 4)",
+      "recency_assessment": "Recency: [cdc_report_01_C1]=standard vs [reuters_wire_02_C1]=standard",
+      "version_assessment": "Version: [cdc_report_01_C1]=official_final vs [reuters_wire_02_C1]=unspecified",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding inical trial confirmed vaccine: Source A (cdc_report_01) reports: 'The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.', while Source B (reuters_wire_02) reports: 'Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "informational",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'inical trial confirmed vaccine' (Value: '95' vs '64') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+          "hypothesis_quote": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants."
+        },
+        "confidence": 0.8924,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "cdc_report_01_C1",
+        "hypothesis_id": "reuters_wire_02_C1"
+      }
+    },
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.8924,
+      "authority_assessment": "Authority: [cdc_report_01_C2]=news_outlet (weight 2) vs [reuters_wire_02_C1]=official_government (weight 4)",
+      "recency_assessment": "Recency: [cdc_report_01_C2]=standard vs [reuters_wire_02_C1]=standard",
+      "version_assessment": "Version: [cdc_report_01_C2]=official_final vs [reuters_wire_02_C1]=unspecified",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding confirmed vaccine efficacy of: Source A (cdc_report_01) reports: 'The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.', while Source B (reuters_wire_02) reports: 'Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "informational",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'confirmed vaccine efficacy of' (Value: '95' vs '64') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.",
+          "hypothesis_quote": "Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants."
+        },
+        "confidence": 0.8924,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "cdc_report_01_C2",
+        "hypothesis_id": "reuters_wire_02_C1"
+      }
+    }
+  ],
+  "synthesized_answer": "Regarding your query: 'vaccine clinical trial efficacy rate', multiple retrieved sources report CONFLICTING or DIVERGENT factual information.\n\n### Identified Contradictions & Discrepancies:\n\n1. **Numerical Discrepancy (INFORMATIONAL Severity)**:\n   - **Source A** ([cdc_report_01] - CDC Surveillance Bulletin):\n     \"The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.\"\n   - **Source B** ([reuters_wire_02] - Reuters Global Health Wire):\n     \"Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'inical trial confirmed vaccine' (Value: '95' vs '64') without conditional qualifiers or differing scopes.\n\n2. **Numerical Discrepancy (INFORMATIONAL Severity)**:\n   - **Source A** ([cdc_report_01] - CDC Surveillance Bulletin):\n     \"The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.\"\n   - **Source B** ([reuters_wire_02] - Reuters Global Health Wire):\n     \"Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'confirmed vaccine efficacy of' (Value: '95' vs '64') without conditional qualifiers or differing scopes.\n\n### Conflict Resolution & Source Reliability Assessment:\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [cdc_report_01_C1]=news_outlet (weight 2) vs [reuters_wire_02_C1]=official_government (weight 4) | Version: [cdc_report_01_C1]=official_final vs [reuters_wire_02_C1]=unspecified\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [cdc_report_01_C2]=news_outlet (weight 2) vs [reuters_wire_02_C1]=official_government (weight 4) | Version: [cdc_report_01_C2]=official_final vs [reuters_wire_02_C1]=unspecified\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n\n### Balanced Takeaway:\n   Factual dispute detected regarding inical trial confirmed vaccine: Source A (cdc_report_01) reports: 'The clinical trial confirmed vaccine efficacy of 95 percent against severe illness and hospitalization.', while Source B (reuters_wire_02) reports: 'Health ministry data showed vaccine efficacy dropped to 64 percent following the emergence of new viral subvariants.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+  "mermaid_graph": "graph TD\n    fema_official_01_C1[\"death toll = 64\"] -- CONTRADICTS --> harvard_study_02_C1[\"hurricane maria in puerto rico, citing widespread post = 4,645\"]\n    fema_official_01_C1[\"death toll = 64\"] -- SUPERSEDES --> harvard_study_02_C1[\"hurricane maria in puerto rico, citing widespread post = 4,645\"]\n    fema_official_01_C1[\"death toll = 64\"] -- CONTRADICTS --> gw_university_03_C1[\"the official commissioned review = 2,975\"]\n    hr_policy_v1_C1[\"time permanent employees are = 24\"] -- CONTRADICTS --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    hr_policy_v1_C1[\"time permanent employees are = 24\"] -- CONTRADICTS --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C1[\"time permanent employees are = 24\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C1[\"time permanent employees are = 24\"]\n    hr_policy_v1_C2[\"nent employees are entitled to = 24\"] -- CONTRADICTS --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    hr_policy_v1_C2[\"nent employees are entitled to = 24\"] -- CONTRADICTS --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C2[\"nent employees are entitled to = 24\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_policy_v1_C2[\"nent employees are entitled to = 24\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C1[\"time staff members = 30\"]\n    probation_clause_03_C1[\"employees joining after july = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    probation_clause_03_C2[\"ing after july are entitled to = 12\"] -- CONDITIONAL_EXCEPTION --> hr_handbook_v2_C2[\"time staff members receive = 30\"]\n    cdc_report_01_C1[\"inical trial confirmed vaccine = 95\"] -- CONTRADICTS --> reuters_wire_02_C1[\"ed vaccine efficacy dropped to = 64\"]\n    cdc_report_01_C2[\"confirmed vaccine efficacy of = 95\"] -- CONTRADICTS --> reuters_wire_02_C1[\"ed vaccine efficacy dropped to = 64\"]"
+}

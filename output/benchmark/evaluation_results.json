@@ -1,0 +1,41 @@
+{
+  "NLI_Alone": {
+    "total": 11,
+    "tp": 5,
+    "fp": 3,
+    "tn": 3,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1.0,
+    "f1": 0.7692,
+    "accuracy": 0.7273,
+    "fpr_contextual": 0.75,
+    "mean_latency_ms": 1.58
+  },
+  "Reasoner_Alone": {
+    "total": 11,
+    "tp": 5,
+    "fp": 0,
+    "tn": 6,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "fpr_contextual": 0.0,
+    "mean_latency_ms": 1.71
+  },
+  "Hybrid_NLI_Reasoner": {
+    "total": 11,
+    "tp": 5,
+    "fp": 0,
+    "tn": 6,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "fpr_contextual": 0.0,
+    "mean_latency_ms": 2.86
+  }
+}

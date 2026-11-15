@@ -1,0 +1,192 @@
+{
+  "query": "hurricane death toll Puerto Rico Maria",
+  "elapsed_seconds": 0.02,
+  "documents": [
+    {
+      "rank": 1,
+      "doc_id": "fema_official_01",
+      "cluster_id": "hurricane_maria",
+      "source": "Federal Emergency Management Agency (FEMA) Official Report",
+      "text": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+      "snippet": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+      "score": 0.83
+    },
+    {
+      "rank": 2,
+      "doc_id": "harvard_study_02",
+      "cluster_id": "hurricane_maria",
+      "source": "Harvard T.H. Chan School of Public Health Study",
+      "text": "An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.",
+      "snippet": "An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.",
+      "score": 0.78
+    },
+    {
+      "rank": 3,
+      "doc_id": "gw_university_03",
+      "cluster_id": "hurricane_maria",
+      "source": "George Washington University Commissioned Milestone Report",
+      "text": "The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018.",
+      "snippet": "The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018.",
+      "score": 0.73
+    }
+  ],
+  "extracted_claims": [
+    {
+      "claim_id": "fema_official_01_C1",
+      "doc_id": "fema_official_01",
+      "cluster_id": "hurricane_maria",
+      "text": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+      "subject": "death toll",
+      "predicate": "has_value",
+      "value": "64",
+      "unit": "people",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "official_government",
+      "version_status": "official_final",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Federal Emergency Management Agency (FEMA) Official Report"
+      }
+    },
+    {
+      "claim_id": "harvard_study_02_C1",
+      "doc_id": "harvard_study_02",
+      "cluster_id": "hurricane_maria",
+      "text": "An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.",
+      "subject": "hurricane maria in puerto rico, citing widespread post",
+      "predicate": "has_value",
+      "value": "4,645",
+      "unit": "people",
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "academic_research",
+      "version_status": "preliminary_estimate",
+      "confidence": 0.92,
+      "metadata": {
+        "match_type": "numerical_assertion",
+        "source_title": "Harvard T.H. Chan School of Public Health Study"
+      }
+    },
+    {
+      "claim_id": "gw_university_03_C1",
+      "doc_id": "gw_university_03",
+      "cluster_id": "hurricane_maria",
+      "text": "The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018.",
+      "subject": "the official commissioned review",
+      "predicate": "asserts",
+      "value": "2,975",
+      "unit": null,
+      "conditions": [],
+      "temporal": null,
+      "authority_tier": "official_government",
+      "version_status": "official_final",
+      "confidence": 0.85,
+      "metadata": {
+        "match_type": "factual_statement",
+        "source_title": "George Washington University Commissioned Milestone Report"
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "is_contradiction": true,
+      "contradiction_type": "temporal_revision",
+      "severity": "critical",
+      "explanation": "Temporal revision detected: One source provides a preliminary estimate (preliminary_estimate) while the other provides an official or updated count. The claims reflect evolving data rather than static disagreement.",
+      "supporting_evidence": {
+        "premise_quote": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+        "hypothesis_quote": "An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse."
+      },
+      "confidence": 0.92,
+      "unresolved_questions": [
+        "Has the later figure been universally adopted as the finalized official record?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "fema_official_01_C1",
+      "hypothesis_id": "harvard_study_02_C1"
+    },
+    {
+      "is_contradiction": true,
+      "contradiction_type": "numerical_discrepancy",
+      "severity": "critical",
+      "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'death toll' (Value: '64' vs '2,975') without conditional qualifiers or differing scopes.",
+      "supporting_evidence": {
+        "premise_quote": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+        "hypothesis_quote": "The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018."
+      },
+      "confidence": 0.9772,
+      "unresolved_questions": [
+        "Which source conducted the primary direct measurement?",
+        "Is there an official regulatory or judicial determination resolving this discrepancy?"
+      ],
+      "nli_prediction": "contradiction",
+      "premise_id": "fema_official_01_C1",
+      "hypothesis_id": "gw_university_03_C1"
+    }
+  ],
+  "resolutions": [
+    {
+      "is_contradiction": true,
+      "precedence": "CLAIM_A_SUPERSEDES",
+      "winning_claim_id": "fema_official_01_C1",
+      "confidence": 0.92,
+      "authority_assessment": "Authority comparison: [fema_official_01_C1]=official_government vs [harvard_study_02_C1]=academic_research",
+      "recency_assessment": "Temporal timeline: [fema_official_01_C1]=unspecified vs [harvard_study_02_C1]=unspecified",
+      "version_assessment": "Version status: [fema_official_01_C1]=official_final vs [harvard_study_02_C1]=preliminary_estimate",
+      "requires_human_review": true,
+      "actionable_recommendation": "Claim A (fema_official_01_C1) represents an updated/finalized account superseding earlier preliminary reporting.",
+      "synthesized_statement": "Reports reflect differing stages of verification: 'The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.' was reported with status 'official_final', whereas 'An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.' represents 'preliminary_estimate'. The updated figure supersedes earlier numbers.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "temporal_revision",
+        "severity": "critical",
+        "explanation": "Temporal revision detected: One source provides a preliminary estimate (preliminary_estimate) while the other provides an official or updated count. The claims reflect evolving data rather than static disagreement.",
+        "supporting_evidence": {
+          "premise_quote": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+          "hypothesis_quote": "An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse."
+        },
+        "confidence": 0.92,
+        "unresolved_questions": [
+          "Has the later figure been universally adopted as the finalized official record?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "fema_official_01_C1",
+        "hypothesis_id": "harvard_study_02_C1"
+      }
+    },
+    {
+      "is_contradiction": true,
+      "precedence": "MUTUALLY_EXCLUSIVE_DISPUTE",
+      "winning_claim_id": null,
+      "confidence": 0.9772,
+      "authority_assessment": "Authority: [fema_official_01_C1]=official_government (weight 4) vs [gw_university_03_C1]=official_government (weight 4)",
+      "recency_assessment": "Recency: [fema_official_01_C1]=standard vs [gw_university_03_C1]=standard",
+      "version_assessment": "Version: [fema_official_01_C1]=official_final vs [gw_university_03_C1]=official_final",
+      "requires_human_review": true,
+      "actionable_recommendation": "Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "synthesized_statement": "Factual dispute detected regarding death toll: Source A (fema_official_01) reports: 'The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.', while Source B (gw_university_03) reports: 'The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018.'. Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.",
+      "verification_details": {
+        "is_contradiction": true,
+        "contradiction_type": "numerical_discrepancy",
+        "severity": "critical",
+        "explanation": "Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'death toll' (Value: '64' vs '2,975') without conditional qualifiers or differing scopes.",
+        "supporting_evidence": {
+          "premise_quote": "The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.",
+          "hypothesis_quote": "The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018."
+        },
+        "confidence": 0.9772,
+        "unresolved_questions": [
+          "Which source conducted the primary direct measurement?",
+          "Is there an official regulatory or judicial determination resolving this discrepancy?"
+        ],
+        "nli_prediction": "contradiction",
+        "premise_id": "fema_official_01_C1",
+        "hypothesis_id": "gw_university_03_C1"
+      }
+    }
+  ],
+  "synthesized_answer": "Regarding your query: 'hurricane death toll Puerto Rico Maria', multiple retrieved sources report CONFLICTING or DIVERGENT factual information.\n\n### Identified Contradictions & Discrepancies:\n\n1. **Temporal Revision (CRITICAL Severity)**:\n   - **Source A** ([fema_official_01] - Federal Emergency Management Agency (FEMA) Official Report):\n     \"The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.\"\n   - **Source B** ([harvard_study_02] - Harvard T.H. Chan School of Public Health Study):\n     \"An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.\"\n   - **Explanation**: Temporal revision detected: One source provides a preliminary estimate (preliminary_estimate) while the other provides an official or updated count. The claims reflect evolving data rather than static disagreement.\n\n2. **Numerical Discrepancy (CRITICAL Severity)**:\n   - **Source A** ([fema_official_01] - Federal Emergency Management Agency (FEMA) Official Report):\n     \"The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.\"\n   - **Source B** ([gw_university_03] - George Washington University Commissioned Milestone Report):\n     \"The official commissioned review conducted by George Washington University estimated 2,975 excess deaths in Puerto Rico between September 2017 and February 2018.\"\n   - **Explanation**: Direct numerical discrepancy: Both claims assert mutually incompatible facts regarding the same subject 'death toll' (Value: '64' vs '2,975') without conditional qualifiers or differing scopes.\n\n### Conflict Resolution & Source Reliability Assessment:\n   - **Precedence**: `CLAIM_A_SUPERSEDES`\n   - **Assessment**: Authority comparison: [fema_official_01_C1]=official_government vs [harvard_study_02_C1]=academic_research | Version status: [fema_official_01_C1]=official_final vs [harvard_study_02_C1]=preliminary_estimate\n   - **Guidance**: Claim A (fema_official_01_C1) represents an updated/finalized account superseding earlier preliminary reporting.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n   - **Precedence**: `MUTUALLY_EXCLUSIVE_DISPUTE`\n   - **Assessment**: Authority: [fema_official_01_C1]=official_government (weight 4) vs [gw_university_03_C1]=official_government (weight 4) | Version: [fema_official_01_C1]=official_final vs [gw_university_03_C1]=official_final\n   - **Guidance**: Direct factual dispute between reputable or peer sources. Human review is recommended; system should present both claims side-by-side.\n   - **Note**: Human verification is advised before relying on either figure in production or policy.\n\n### Balanced Takeaway:\n   Reports reflect differing stages of verification: 'The official confirmed death toll from Hurricane Maria stands at 64 people according to government audits and official hospital death certificates issued following the storm.' was reported with status 'official_final', whereas 'An independent academic mortality study by Harvard researchers estimates that 4,645 people died as a result of Hurricane Maria in Puerto Rico, citing widespread post-hurricane healthcare disruption and infrastructure collapse.' represents 'preliminary_estimate'. The updated figure supersedes earlier numbers.",
+  "mermaid_graph": "graph TD\n    fema_official_01_C1[\"death toll = 64\"] -- CONTRADICTS --> harvard_study_02_C1[\"hurricane maria in puerto rico, citing widespread post = 4,645\"]\n    fema_official_01_C1[\"death toll = 64\"] -- SUPERSEDES --> harvard_study_02_C1[\"hurricane maria in puerto rico, citing widespread post = 4,645\"]\n    fema_official_01_C1[\"death toll = 64\"] -- CONTRADICTS --> gw_university_03_C1[\"the official commissioned review = 2,975\"]"
+}
