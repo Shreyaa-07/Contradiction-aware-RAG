@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 from huggingface_hub import hf_hub_download
 
-base_dir = Path(r"c:\Users\hp\Desktop\oss-session\ire")
+base_dir = Path(__file__).resolve().parent
 out_dir = base_dir / "output" / "multinews"
 out_dir.mkdir(parents=True, exist_ok=True)
 csv_file = out_dir / "multinews_cleaned_sample.csv"

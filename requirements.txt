@@ -1,0 +1,17 @@
+# Core Scientific & Data Processing
+numpy>=1.24.0
+pandas>=1.5.0
+scipy>=1.10.0
+matplotlib>=3.6.0
+
+# Datasets & NLP Libraries
+datasets>=2.14.0
+huggingface-hub>=0.16.0
+scikit-learn>=1.2.0
+
+# Deep Learning, Embeddings & Vector Search
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+

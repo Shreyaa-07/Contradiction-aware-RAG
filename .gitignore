@@ -15,10 +15,12 @@ env/
 *.jsonl
 *.npy
 *.bin
+*.joblib
 output/**/*.csv
 output/**/*.jsonl
 output/**/*.npy
 output/**/*.bin
+output/**/*.joblib
 
 # OS files
 .DS_Store

@@ -133,21 +133,32 @@ class DocumentRetriever:
         self.corpus_df: Optional[pd.DataFrame] = None
         self.vectorizer: Optional[TfidfVectorizer] = None
         self.tfidf_matrix = None
-        self._initialize_corpus()
+        self._corpus_initialized = False
 
     def _initialize_corpus(self):
+        if self._corpus_initialized:
+            return
         if CLEANED_CSV.exists():
             try:
-                self.corpus_df = pd.read_csv(CLEANED_CSV)
-                # Build or load vectorizer
-                self.vectorizer = TfidfVectorizer(
-                    max_features=25_000,
-                    ngram_range=(1, 2),
-                    min_df=2,
-                    sublinear_tf=True,
-                    stop_words="english",
-                )
-                self.tfidf_matrix = self.vectorizer.fit_transform(self.corpus_df["text"])
+                import joblib
+                CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+                if CACHE_FILE.exists():
+                    self.vectorizer, self.tfidf_matrix, self.corpus_df = joblib.load(CACHE_FILE)
+                else:
+                    self.corpus_df = pd.read_csv(CLEANED_CSV)
+                    self.vectorizer = TfidfVectorizer(
+                        max_features=25_000,
+                        ngram_range=(1, 2),
+                        min_df=2,
+                        sublinear_tf=True,
+                        stop_words="english",
+                    )
+                    self.tfidf_matrix = self.vectorizer.fit_transform(self.corpus_df["text"])
+                    try:
+                        joblib.dump((self.vectorizer, self.tfidf_matrix, self.corpus_df), CACHE_FILE)
+                    except Exception:
+                        pass
+                self._corpus_initialized = True
             except Exception as e:
                 print(f"[Warning] Could not initialize TF-IDF on corpus ({e}).")
 
@@ -155,7 +166,11 @@ class DocumentRetriever:
         """
         Retrieve relevant documents for query.
         """
-        if dataset in ("sample", "demo") or self.corpus_df is None:
+        if dataset in ("sample", "demo"):
+            return self._retrieve_from_scenarios(query, top_k=top_k)
+
+        self._initialize_corpus()
+        if self.corpus_df is None or self.tfidf_matrix is None:
             return self._retrieve_from_scenarios(query, top_k=top_k)
 
         # Vector retrieval over corpus
